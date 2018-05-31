@@ -1,64 +1,206 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Background</title>
-  <link rel="stylesheet" type="text/css" href="/css/electrical.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 200px;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 200px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-white">
 
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <body>
-    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="color: black">
-      <!-- Avatar image in top left corner -->
-      <img src="https://www.emma.cam.ac.uk/images/supporting/kabla1.jpg" style="width:100%">
-      <a href="farm.html" class="w3-bar-item w3-button w3-padding-large w3-black">
-        <i class="fa fa-home w3-xxlarge"></i>
-        <p>HOME</p>
-      </a>
-      <a href="background.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <i class="fa fa-tint w3-xxlarge"></i>
-        <p>BACKGROUND</p>
-      </a>
-      <a href="electrical.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <i class="fa fa-bolt w3-xxlarge"></i>
-        <p>ELECTIRCAL MOISTURE</p>
-      </a>
-      <a href="mechanical.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <i class="fa fa-cogs w3-xxlarge"></i>
-        <p>MECHANICAL MOISTURE</p>
-      </a>
-      <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <i class="fa fa-envelope w3-xxlarge"></i>
-        <p>CONTACT</p>
-      </a>
-      <a href="photo.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <i class="fa fa-camera-retro w3-xxlarge"></i>
-        <p>PHOTOS</p>
-      </a>
-    </nav>
-    <h1 style="margin: 0 auto;    text-align: center; color:#fff79e;  font-family: 'Montserrat'">
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="color: black">
+  <!-- Avatar image in top left corner -->
+  <img src="https://www.emma.cam.ac.uk/images/supporting/kabla1.jpg" style="width:100%">
+  <a href="farm.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="background.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-tint w3-xxlarge"></i>
+    <p>BACKGROUND</p>
+  </a>
+  <a href="electrical.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-bolt w3-xxlarge"></i>
+    <p>ELECTIRCAL MOISTURE</p>
+  </a>
+  <a href="mechanical.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-cogs w3-xxlarge"></i>
+    <p>MECHANICAL MOISTURE</p>
+  </a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+  <a href="photo.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-camera-retro w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+</nav>
 
-      <strong>The Electrical Team</strong>
-    </h1>
-    <article class="container">
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
 
-  <blockquote>
-    <strong>Imagination</strong> is <em>more important</em> than <strong>knowledge</strong>
-  </blockquote>
-  <b>Einstein, A.</b>
-
-</article>
-    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-      <h2 class="w3-text-grey">My Name</h2>
-      <hr style="width:200px" class="w3-opacity">
-      <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-white" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Electrical</span> Team</h1>
+    <p>Revolutionary Design in wetting front detection.</p>
+    <img src="/Images/initial prototype.jpeg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
 
 
-  </body>
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-grey">The Design</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <h3 class="w3-padding-16 w3-text-grey">Rating against key specifications</h3>
+    <p class="w3-wide">Accuracy</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Durability</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">Cost</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div>
+    <p class="w3-wide">Ease of manufacture</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:10%"></div>
+    </div>
+    <p class="w3-wide">Ease of Use</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
+
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">&lt £30 </span><br>
+        Cost of Protoype
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">3+</span><br>
+        Years of Use
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">1 Billion People</span><br>
+        Potential impact
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">4 weeks</span><br>
+        World class research and development
+      </div>
+    </div>
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Product Specs
+    </button>
+
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-grey">Product Financing</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Reader</li>
+          <li class="w3-padding-16">3x Sensors</li>
+          <li class="w3-padding-16">Technical Support and Servicing</li>
+          <li class="w3-padding-16">small Hug From Quan</li>
+          <li class="w3-padding-16">
+            <h2>$ 6</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Reader</li>
+          <li class="w3-padding-16">10x Sensors</li>
+          <li class="w3-padding-16">Technical Support and Servicing</li>
+          <li class="w3-padding-16">BIG Hug From Quan</li>
+          <li class="w3-padding-16">
+            <h2>$ 12</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">Product Reviews</h3>
+    <img src="/Images/kabla.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Alexandre Kabla.</span> CEO at Tech for the Poorest Billion.</p>
+    <p>This is at least the second best soil wetting from detector I've seen produced during Tech for the Poorest Billion</p><br>
+
+    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Lara.</span></p>
+    <p>Radically Complicated</p>
+  <!-- End About Section -->
+  </div>
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-grey">More photos</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="/Images/beast.jpeg" style="width:100%">
+        <img src="/Images/final.jpeg" style="width:100%">
+        <img src="/Images/final1.jpeg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="/Images/image6.jpeg" style="width:100%">
+        <img src="/Images/v2.jpeg" style="width:100%">
+        <img src="/Images/v3.jpeg" style="width:100%">
+        <img src="/Images/v21.jpeg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
 </html>
