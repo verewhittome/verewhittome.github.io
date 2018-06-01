@@ -1,206 +1,353 @@
-
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 200px;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 200px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
-<body class="w3-white">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Background</title>
+  <link rel="css/farm.css" type="text/css" href="theme.css">
+  <link rel="stylesheet" type="text/css" href="/css/dropdown.css">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="color: black">
-  <!-- Avatar image in top left corner -->
-  <img src="https://www.emma.cam.ac.uk/images/supporting/kabla1.jpg" style="width:100%">
-  <a href="farm.html" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="background.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-tint w3-xxlarge"></i>
-    <p>BACKGROUND</p>
-  </a>
-  <a href="electrical.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-bolt w3-xxlarge"></i>
-    <p>ELECTIRCAL MOISTURE</p>
-  </a>
-  <a href="mechanical.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-cogs w3-xxlarge"></i>
-    <p>MECHANICAL MOISTURE</p>
-  </a>
-  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-  <!-- <a href="photo.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-camera-retro w3-xxlarge"></i>
-    <p>PHOTOS</p>
-  </a> -->
-</nav>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script defer src="/javascript/dropdown.js"></script>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
-</div>
+    <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 200px;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 200px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+      #main {margin-left: 0}
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+          background-attachment: scroll;
+      }}
 
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-white" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">Electrical</span> Team</h1>
-    <p>Revolutionary Design in wetting front detection.</p>
-    <img src="/Images/initial prototype.jpeg" alt="boy" class="w3-image" width="992" height="1108">
-  </header>
+    /* Create a Parallax Effect */
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+        background-image: url('/Images/electprotoarty.jpg');
+        min-height: 600px;
+        min-width: 80%;
+
+    }
+
+    /* Second image (Portfolio) */
+    .bgimg-2 {
+        background-image: url("/Images/tech.jpg");
+        min-height: 400px;
+
+    }
+
+    /* Third image (Contact) */
+    .bgimg-3 {
+        background-image: url("/Images/design.jpg");
+        min-height: 400px;
+    }
+
+    .w3-wide {letter-spacing: 10px;}
+    .w3-hover-opacity {cursor: pointer;}
 
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-grey">The Design</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-    <h3 class="w3-padding-16 w3-text-grey">Rating against key specifications</h3>
-    <p class="w3-wide">Accuracy</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </style>
+  </head>
+    <body>
+
+      <!-- Icon Bar (Sidebar - hidden on small screens) -->
+      <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="color: black">
+        <!-- Avatar image in top left corner -->
+        <img src="https://www.emma.cam.ac.uk/images/supporting/kabla1.jpg" style="width:100%">
+        <a href="farm.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+          <i class="fa fa-home w3-large"></i>
+          <p style="font-size:15px">HOME</p>
+        </a>
+        <a href="background.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+          <i class="fa fa-tint w3-large"></i>
+          <p style="font-size:15px">BACKGROUND</p>
+    </a>
+          <button class="dropdown-btn w3-bar-item w3-button w3-black w3-padding-large">
+            <i class="fa fa-bolt w3-large"></i> <br/>
+             ELECTRICAL MOISTURE
+            <i class="fa fa-caret-down"></i>
+            </button>
+              <div class="dropdown-container">
+                <a href="electrical.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Product Overview</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Specifications</a>
+                <a href="" class="w3-bar-item w3-button w3-padding-large w3-hover-black">How to Use</a>
+                <a href="electricalteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The electrical team</a>
+
+              </div>
+
+        <!-- w3-bar-item w3-padding-large w3-black -->
+        <button class="dropdown-btn w3-bar-item w3-button w3-hover-black">
+          <i class="fa fa-cogs w3-large"></i> <br/>
+          MECHANICAL MOISTURE
+          <i class="fa fa-caret-down"></i>
+          </button>
+            <div class="dropdown-container">
+              <a href="mech_touchy_bottle.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Touchy Bottle</a>
+              <a href="mech_core_sampler.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Soil Core Sampler</a>
+              <a href="mech_wetting.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Bouyant wetting front detector</a>
+              <a href="mechteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The mechanical team</a>
+
+            </div>
+        </a>
+
+        <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+          <i class="fa fa-envelope w3-large"></i>
+          <p style="font-size:15px">CONTACT</p>
+        </a>
+
+      </nav>
+
+
+    <!-- First Parallax Image with Logo Text -->
+
+        <div class="bgimg-1 w3-display-container w3-opacity-min">
+          <div class="w3-display-middle">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Electrical <span class="w3-hide-small">Team</span></span>
+          </div>
+        </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <!-- <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+      <div class="w3-display-middle" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Mechanical <span class="w3-hide-small">Team</span></span>
+      </div>
+    </div> -->
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+      <h3 class="w3-center">Design</h3>
+      <p class="w3-center"><em>We want to revolutionise agriculture</em></p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+        qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <div class="w3-row">
+        <div class="w3-col m6 w3-center w3-padding-large">
+          <p><b><i class="fa fa-bolt w3-margin-right"></i>Electrical Moisture</b></p><br>
+          <img src="/Images/prototybetopview.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="300px" height="400px">
+        </div>
+
+        <!-- Hide this text on small devices -->
+        <div class="w3-col m6 w3-hide-small w3-padding-large">
+          <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+
+
+      </div>
+      <h3 class="w3-padding-16 w3-text-grey">Rating against key specifications</h3>
+      <h5 class="w3-padding-16 w3-text-grey">Table Example</h5>
+
+      <table class="w3-table-all">
+      <tr>
+        <th>Product</th>
+        <th>Accuracy</th>
+        <th>Durability</th>
+        <th>Usability</th>
+      </tr>
+      <tr>
+        <td>Electrical</td>
+        <td>2+</td>
+        <td>1+</td>
+        <td>2+</td>
+      </tr>
+      <tr>
+        <td>Full Stop</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      </table>
+      <h5 class="w3-padding-32 w3-text-grey">Bars Example</h5>
+
+      <p class="w3-wide">Accuracy</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+      </div>
+      <p class="w3-wide">Durability</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+      </div>
+      <p class="w3-wide">Cost</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+      </div>
+      <p class="w3-wide">Ease of manufacture</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:10%"></div>
+      </div>
+      <p class="w3-wide">Ease of Use</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+      </div><br>
+
+      <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">&lt £30 </span><br>
+          Cost of Protoype
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">3+</span><br>
+          Years of Use
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">1 Billion People</span><br>
+          Potential impact
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">4 weeks</span><br>
+          World class research and development
+        </div>
+      </div>
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">TECHNOLOGY</span>
+      </div>
     </div>
-    <p class="w3-wide">Durability</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
-    </div>
-    <p class="w3-wide">Cost</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-    </div>
-    <p class="w3-wide">Ease of manufacture</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:10%"></div>
-    </div>
-    <p class="w3-wide">Ease of Use</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-    </div><br>
 
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">&lt £30 </span><br>
-        Cost of Protoype
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">3+</span><br>
-        Years of Use
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">1 Billion People</span><br>
-        Potential impact
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">4 weeks</span><br>
-        World class research and development
-      </div>
-    </div>
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+      <h3 class="w3-center">ROBUST & EASY TO USE CIRCUITRY</h3>
+      <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
 
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Product Specs
-    </button>
+      <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+      <div class="w3-row-padding w3-center">
+        <div class="w3-col m3">
+          <img src="/Images/circuit.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+        </div>
 
-    <!-- Grid for pricing tables -->
-    <h3 class="w3-padding-16 w3-text-grey">Product Financing</h3>
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-          <li class="w3-padding-16">Reader</li>
-          <li class="w3-padding-16">3x Sensors</li>
-          <li class="w3-padding-16">Technical Support and Servicing</li>
-          <li class="w3-padding-16">small Hug From Quan</li>
-          <li class="w3-padding-16">
-            <h2>$ 6</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
+        <div class="w3-col m3">
+          <img src="/Images/circuit.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="/Images/electarty2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="/Images/electarty2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+        </div>
       </div>
 
-      <div class="w3-half">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
-          <li class="w3-padding-16">Reader</li>
-          <li class="w3-padding-16">10x Sensors</li>
-          <li class="w3-padding-16">Technical Support and Servicing</li>
-          <li class="w3-padding-16">BIG Hug From Quan</li>
-          <li class="w3-padding-16">
-            <h2>$ 12</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
+      <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m3">
+          <img src="/Images/electarty2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="/Images/electarty2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="/Images/electarty2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="/Images/electarty2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+        </div>
+        <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
       </div>
-    <!-- End Grid/Pricing tables -->
     </div>
 
-    <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">Product Reviews</h3>
-    <img src="/Images/kabla.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Alexandre Kabla.</span> CEO at Tech for the Poorest Billion.</p>
-    <p>This is at least the second best soil wetting from detector I've seen produced during Tech for the Poorest Billion</p><br>
-
-    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Lara.</span></p>
-    <p>Radically Complicated</p>
-  <!-- End About Section -->
-  </div>
-
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-grey">More photos</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="/Images/beast.jpeg" style="width:100%">
-        <img src="/Images/final.jpeg" style="width:100%">
-        <img src="/Images/final1.jpeg" style="width:100%">
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+      <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption" class="w3-opacity w3-large"></p>
       </div>
-
-      <div class="w3-half">
-        <img src="/Images/image6.jpeg" style="width:100%">
-        <img src="/Images/v2.jpeg" style="width:100%">
-        <img src="/Images/v3.jpeg" style="width:100%">
-        <img src="/Images/v21.jpeg" style="width:100%">
-      </div>
-    <!-- End photo grid -->
     </div>
-  <!-- End Portfolio Section -->
-  </div>
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+         <span class="w3-xxlarge w3-text-white w3-wide" style="text-align: center">MECHANICAL DESIGN</span>
+      </div>
+    </div>
+
+
+    <!-- Portfolio Section -->
+    <div class="w3-padding-64 w3-content" id="photos">
+      <h2 class="w3-text-grey">More photos</h2>
+      <hr style="width:200px" class="w3-opacity">
+
+      <!-- Grid for photos -->
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half">
+
+
+          <img src="/Images/prototybetopview.jpg" style="width:100%">
+          <img src="/Images/endelec.jpg" style="width:100%">
+        </div>
+
+        <div class="w3-half">
+          <img src="/Images/endelect(2).jpg" style="width:100%">
+          <img src="/Images/electarty2.jpg" style="width:100%">
+          <img src="/Images/electprotoarty.jpg" style="width:100%">
+          <img src="/Images/endelec3.jpg" style="width:100%">
+        </div>
+      <!-- End photo grid -->
+      </div>
+    <!-- End Portfolio Section -->
+    </div>
 
 
 
-<!-- END PAGE CONTENT -->
-</div>
+    <script>
 
-</body>
+
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+    // Change style of navbar on scroll
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        } else {
+            navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+        }
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    </script>
+
+
+    </body>
+    </html>
+
+
+
+
+  </body>
 </html>

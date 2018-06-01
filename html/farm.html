@@ -19,43 +19,75 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.0/TweenMax.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="/javascript/dropdown.js"></script>
 
 
     <link rel="/css/farm.css" type="text/css" href="theme.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/dropdown.css">
+
+    <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 200px;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 200px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    </style>
   </head>
 
-  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-    <!-- Avatar image in top left corner -->
-    <img src="https://www.emma.cam.ac.uk/images/supporting/kabla1.jpg" style="width:100%">
-    <a href="farm.html" class="w3-bar-item w3-button w3-padding-large w3-black">
-      <i class="fa fa-home w3-xxlarge"></i>
-      <p>HOME</p>
-    </a>
-    <a href="background.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <i class="fa fa-tint w3-xxlarge"></i>
-      <p>BACKGROUND</p>
-    </a>
-    <a href="electrical.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <i class="fa fa-bolt w3-xxlarge"></i>
-      <p>ELECTIRCAL MOISTURE</p>
-    </a>
-    <a href="mechanical.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <i class="fa fa-cogs w3-xxlarge"></i>
-      <p>MECHANICAL MOISTURE</p>
-    </a>
-    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <i class="fa fa-envelope w3-xxlarge"></i>
-      <p>CONTACT</p>
-    </a>
-    <a href="photo.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <i class="fa fa-camera-retro w3-xxlarge"></i>
-      <p>PHOTOS</p>
-    </a>
-  </nav>
+    <body class="w3-black">
 
+      <!-- Icon Bar (Sidebar - hidden on small screens) -->
+      <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="color: black">
+        <!-- Avatar image in top left corner -->
+        <img src="https://www.emma.cam.ac.uk/images/supporting/kabla1.jpg" style="width:100%">
+        <a href="farm.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+          <i class="fa fa-home w3-large"></i>
+          <p style="font-size:15px">HOME</p>
+        </a>
+        <a href="background.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+          <i class="fa fa-tint w3-large"></i>
+          <p style="font-size:15px">BACKGROUND</p>
+    </a>
+          <button style= "color: black"class="dropdown-btn w3-bar-item w3-button w3-hover-black w3-padding-large">
+            <i class="fa fa-bolt w3-large"></i> <br/>
+             ELECTRICAL MOISTURE
+            <i class="fa fa-caret-down"></i>
+            </button>
+              <div class="dropdown-container">
+                <a href="electrical.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Product Overview</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Specifications</a>
+                <a href="" class="w3-bar-item w3-button w3-padding-large w3-hover-black">How to Use</a>
+                <a href="electricalteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The electrical team</a>
+
+              </div>
+
+        <!-- w3-bar-item w3-padding-large w3-black -->
+        <button style= "color: black" class="dropdown-btn w3-bar-item w3-button w3-hover-black">
+          <i class="fa fa-cogs w3-large"></i> <br/>
+          MECHANICAL MOISTURE
+          <i class="fa fa-caret-down"></i>
+          </button>
+            <div class="dropdown-container">
+              <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Touchy Bottle</a>
+              <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Concept 2</a>
+              <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Concept 3</a>
+              <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Concept 4</a>
+
+            </div>
+        </a>
+
+        <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+          <i class="fa fa-envelope w3-large"></i>
+          <p style="font-size:15px">CONTACT</p>
+        </a>
+
+      </nav>
 
 
 <div class="farm_img">
