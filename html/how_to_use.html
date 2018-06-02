@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Background</title>
+    <link rel="css/farm.css" type="text/css" href="theme.css">
+    <link rel="stylesheet" type="text/css" href="/css/dropdown.css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="/javascript/dropdown.js"></script>
+
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .w3-row-padding img {
+            margin-bottom: 12px
+        }
+
+        /* Set the width of the sidebar to 120px */
+
+        .w3-sidebar {
+            width: 200px;
+        }
+
+        /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+
+        #main {
+            margin-left: 200px
+        }
+
+        /* Remove margins from "page content" on small screens */
+
+        @media only screen and (max-width: 600px) {
+            #main {
+                margin-left: 0
+            }
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-attachment: scroll;
+            }
+        }
+
+        /* Create a Parallax Effect */
+
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* First image (Logo. Full height) */
+
+        .bgimg-1 {
+            background-image: url('../Images/irrigation_background.jpeg');
+            min-height: 600px;
+            min-width: 80%;
+
+        }
+
+        .w3-wide {
+            letter-spacing: 10px;
+        }
+
+        .w3-hover-opacity {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="color: black">
+        <!-- Avatar image in top left corner -->
+        <img src="https://www.emma.cam.ac.uk/images/supporting/kabla1.jpg" style="width:100%">
+        <a href="farm.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-home w3-large"></i>
+            <p style="font-size:15px">HOME</p>
+        </a>
+        <a href="background.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-tint w3-large"></i>
+            <p style="font-size:15px">BACKGROUND</p>
+        </a>
+        <button class="dropdown-btn w3-bar-item w3-button w3-black w3-padding-large">
+            <i class="fa fa-bolt w3-large"></i>
+            <br/> ELECTRICAL MOISTURE
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="electrical.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Product Overview</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Specifications</a>
+            <a href="how_to_use.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">How to Use</a>
+            <a href="electricalteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The electrical team</a>
+
+        </div>
+
+        <!-- w3-bar-item w3-padding-large w3-black -->
+        <button class="dropdown-btn w3-bar-item w3-button w3-hover-black">
+            <i class="fa fa-cogs w3-large"></i>
+            <br/> MECHANICAL MOISTURE
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="mech_touchy_bottle.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Touchy Bottle</a>
+            <a href="mech_core_sampler.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Soil Core Sampler</a>
+            <a href="mech_wetting.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Bouyant wetting front detector</a>
+            <a href="mechteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The mechanical team</a>
+
+        </div>
+        </a>
+
+        <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-envelope w3-large"></i>
+            <p style="font-size:15px">CONTACT</p>
+        </a>
+
+    </nav>
+
+
+    <!-- First Parallax Image with Logo Text -->
+
+    <div class="bgimg-1 w3-display-container w3-opacity-min" style="margin-left:15%">
+        <div class="w3-display-middle">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">
+                <span class="w3-hide-small">How to use</span>
+            </span>
+        </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" style="margin-left:20%">
+        <!-- <h3 class="w3-center">How to use the electronic wetting front detector</h3> -->
+        <p>In this tutorial, we will cover how to set up the detector, how to take readings, and how to use results to improve
+            your irrigation schedule.</p>
+
+        <div style="margin-top:50px"></div>
+        <h3 class="w3-center">Overview of the system</h3>
+
+        <p>The electronic wetting front detector has two parts: the
+            <strong>sensor</strong> and the
+            <strong>reader</strong>.</p>
+
+        <p>The sensor is an inexpensive device shaped like a cylinder. It has metal rings at various depth to measure the resistivity
+            of the soil, which the reader uses to calculate the wetting front depth. Many sensors can be deployed across
+            the field to measure the wetting front at different locations.
+            <strong>Sensors are passive and do not require any batteries.</strong>
+            They need to be used in conjunction with the reader to measure the waterfront.</p>
+
+        <p>The reader is a battery powered electronic device that provides power to the sensor and uses its measurements to
+            calculate the wetting front depth. Only one reader is needed to read from all the sensors. To take a reading,
+            the user just needs to attached the reader to the top of the sensor, and the reader’s LEDs will light up to indicate
+            the wetting front depth. This will be described in more detail in the following sections</p>
+
+        <div style="margin-top:50px"></div>
+        <h3 class="w3-center">Setting up the sensor</h3>
+
+        <br>
+        <h5>Choosing the right location</h5>
+
+        <p>For furrow irrigation, the sensor should be placed at the
+            <strong>edge of the furrow</strong>.</p>
+        <img src="../Images/furrow.png">
+
+        <p>For drip irrigation, the sensor should be placed
+            <strong>beside the drip line</strong>.</p>
+        <img src="../Images/drip.png">
+
+        <br>
+        <h5>Digging the hole for the sensor</h5>
+
+        <p>The sensor requires a hole of
+            <strong>5mm diameter</strong> and
+            <strong>40mm depth</strong>. You can tell whether the hole is deep enough by putting the sensor in. If the hole has the
+            right depth, the red line on the sensor should be at ground level</p>
+
+        <p>The best tool for digging the sensor hole is a
+            <strong>5mm auger</strong>: </p>
+        <img src="../Images/auger.jpg" height="200px">
+
+        <p>If an auger is not available, you can also use a
+            <strong>spade and trowel</strong>: </p>
+        <img src="../Images/spade.jpeg" height="200px">
+        <img src="../Images/trowel.jpg" height="200px">
+
+        <br>
+        <br>
+        <p>If you are unsure about how to dig a hole, these two tutorials might be helpful:</p>
+
+        <p>
+            <a href="https://www.wikihow.com/Use-an-Auger">Digging a hole with a auger</a>
+        </p>
+        <p>
+            <a href="http://www.homelife.com.au/gardening/gardening-tips/how-to-use-a-spade">Digging a hole with spade and trowel</a>
+        </p>
+
+        <br>
+        <h5>Burying the sensor</h5>
+        <p>When you are happy with the hole, push the sensor into the hole until the red line is at ground level. Then pack
+            in soil around the edge until you can no longer wobble the sensor in the hole.</p>
+
+        <div style="margin-top:50px"></div>
+        <h3 class="w3-center">Measuring with the reader</h3>
+
+        <br>
+        <h5>Attaching the reader to the sensor</h5>
+
+        <p>To get a measurement from the sensor, all five metal screws need to be in contact with the corresponding metal screws
+            on the sensor. To do this, place the reader such that the protruding parts of the sensor fit into the holes in
+            the reader. Once in this position, push the sensor down until you feel that the springs are tight. Then turn
+            the reader on to take a measurements.
+        </p>
+        <p>The red highlighted parts should fit into each other:</p>
+        <img src="../Images/female.JPG" width="200px">
+        <img src="../Images/male.JPG" width="200px">
+
+
+        <br>
+        <br>
+        <br>
+
+        <h5>Interpreting the reader result</h5>
+
+        <p>When the wetting front reaches a certain depth, a corresponding LEDs on the reader will light up. </p>
+        <p>This simple tool will help you interpret the result and give recommendations:</p>
+
+        <form>
+            <br> Which LED is lighting up:
+            <select name="led" style="margin-left:50px">
+                <option value=0>No LED</option>
+                <option value=20>1</option>
+                <option value=30>2</option>
+                <option value=35>3</option>
+                <option value=40>4</option>
+            </select>
+            <br> Your irrigation method:
+            <select name="irrigation" style="margin-left:65px">
+                <option value="drip">Drip</option>
+                <option value="furrow">Furrow</option>
+                <option value="sprinkler">Sprinkler</option>
+                <option value="flood">Flood</option>
+            </select>
+            <br>
+            <br>
+            <input type="button" value="Calculate" onclick="interpret()" style="border-radius: 25px; background-color: #e7e7e7;">
+        </form>
+
+        <p id="result"></p>
+
+
+
+
+        <div style="margin-top:50px"></div>
+
+        <h3 class="w3-center">Maintenance and good practices</h3>
+
+        <br>
+        <h5>Protecting the sensor</h5>
+        <p>The sensor can be left in the ground for many years. It will not corrode as the metal parts are made of stainless
+            steel. However, over time the exposed parts of the wires could become more fragile through wear and eventually
+            break, at which point the sensor would need to be replaced. To minimize the deterioration of the wires, <strong>try not
+            to move or twist the sensor after it has been placed into the ground</strong>.</p>
+        <p>The exposed wires on the outside:</p>
+        <img src="../Images/wires.JPG" width="300px">
+
+        <br>
+        <br>
+        <h5>Reader battery replacement</h5>
+
+        <p>The reader uses
+            <strong>3 AAA batteries</strong> and has an expected battery life of half a year. It is recommended that you switch the
+            reader off while not using to minimise battery consumption. It is also possible (but not yet implemented) to
+            use rechargeable batteries and charge the reader with mains electricity, if it is available.</p>
+
+
+        <script>
+
+
+            function interpret(data) {
+                var current = document.getElementsByName("led")[0].value;
+                var irrigation = document.getElementsByName("irrigation")[0].value;
+                var lo = 0;
+                var hi = 0;
+                switch (irrigation) {
+                    case 'drip':
+                        lo = 30;
+                        hi = 45
+                        break;
+                    case 'sprinkler':
+                        lo = 20;
+                        hi = 30;
+                        break;
+                    case 'flood':
+                        lo = 20;
+                        hi = 35;
+                        break;
+                    case 'furrow':
+                        lo = 30;
+                        hi = 40;
+                        break;
+                }
+                var text = ""
+                if (current >= hi) {
+                    text = "Wetting front is too deep, irrigate less next time."
+                }
+                else if (current <= lo) {
+                    text = "Wetting front is too shallow, more water is needed."
+                }
+                else {
+                    text = "Wetting front is just right, stop irrigating."
+                }
+                document.getElementById("result").innerHTML = text;
+            }
+
+
+            // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+            // Change style of navbar on scroll
+            window.onscroll = function () { myFunction() };
+            function myFunction() {
+                var navbar = document.getElementById("myNavbar");
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+                } else {
+                    navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+                }
+            }
+
+            // Used to toggle the menu on small screens when clicking on the menu button
+            function toggleFunction() {
+                var x = document.getElementById("navDemo");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+        </script>
+
+
+</body>
+
+</html>
+
+
+
+
+</body>
+
+</html>
