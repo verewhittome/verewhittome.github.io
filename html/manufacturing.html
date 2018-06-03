@@ -142,7 +142,7 @@
         <li class="w3-padding-small">Constructing the sensor module</li>
       </ul>
 
-      <p>Click on the buttons below to skip to a section.</p>
+      <p>Click on the buttons below to skip to a section.(can we make them buttons?)</p>
       <h4 class="w3-center">Circuitry and Programming</h4>
       <h4 class="w3-center">Reader Construction</h4>
       <h4 class="w3-center">Sensor Construction</h4>
@@ -166,22 +166,48 @@
   <p>All circuitry and electrical components for the <strong>wetting front detector</strong> are soldered onto the custom PCB. Relevant files needed to fabricate this PCB can be found at the end of this section.</p>
 
   <h2 class="w3-center">SENSOR CIRCUITRY</h2>
+  <p>The circuit shown on the left is a simple circuit used to measure the voltage (and hence the resistance) between V1 and GND (representing the two metal strips). The way the circuit operates is as follows:</p>
+
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
       <br>
-      <img src="../Images/electrical_manufacturing_12.PNG" alt="Photo of Me" height="400px">
+      <img src="../Images/electrical_manufacturing_12.PNG" alt="Photo of Me" height="450px">
     </div>
 
     <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
         <ul style="list-style-type:circle">
-            <li class="w3-padding-small">The circuit on the left shows the simple</li>
+          <li class="w3-padding-small">When the two metal strips are in contact with dry soil, the resistance between V1 and GND is very high and the two metal strips are effectively non conductive.</li>
+          <li class="w3-padding-small">Since no current flows, the point V1 is at 3.3V. The micro controller reads this high value and sets the corresponding LED to be off.</li>
+          <li class="w3-padding-small">When the metal strips are in contact with wet soil, the resistance between V1 and GND is low and there is a conductive path between the two metal strips.</li>
+          <li class="w3-padding-small">The microcontroller reads this low value and turns the corresponding LED on, signalling that the wetting front has reached the depth of the metal strips.</li>
+          <li class="w3-padding-small">Note that the capacitor is present to eliminate any AC signals that may interfere with the readings.</li>
         </ul>
     </div>
-
-
-
   </div>
+
+  <h2 class="w3-center">PROGRAMMING THE MICROCONTROLLER</h2>
+  <p>The microcontroller used is a STM32F103C8 "Blue Pill". When compared with an Arduino UNO, the Blue Pill has higher performance, lower power consumption and lower cost. There are multiple ways of programming the microcontroller such as using a JTAG adapter, an mbed platform (eg: nucleo board) or a USB to ttl serial adapter. The pinout  capabilities of the Blue Pill is shown below</p>
+  <img src="../Images/electrical_manufacturing_13.PNG" height="450px">
+  <p>source: http://wiki.stm32duino.com/index.php?title=Blue_Pill</p>
+  <p>In this guide, we shall take the USB to ttl serial adapter approach. We will be using a FT232RL board as the serial to ttl adapter as a low cost option (available for less than £1). The arduino integrated development environment (IDE) will be used in conjunction with the FT232RL board to program the Blue Pill.</p>
+  <p>The steps below outline the process of programming the Blue Pill</p>
+
+  <ul style="list-style-type:circle">
+    <li class="w3-padding-small">First download the Arduino IDE here: https://www.arduino.cc/en/Main/Software?</li>
+    <li class="w3-padding-small">Once opened, you will need to add the STM32F103C8 board using the boards manager. Go to Tools > Board > Boards Manager and search for "STM32F103". The expected window is shown below. Click install.</li>
+    <img src="../Images/electrical_manufacturing_14.PNG" height="400px">
+    <li class="w3-padding-small">Under tools. change the board to "Generic STM32F103C series" and make sure the other settings are as follows:</li>
+    <img src="../Images/electrical_manufacturing_15.PNG" height="250px">
+    <li class="w3-padding-small">Connect the Blue Pill to the FT232RL board which connects to the computer's USB as shown below, a breadboard is recommended for this. The Tx and RX wires are the serial links and the 5V and GND wires provide power to the Blue Pill. It is also possible to use the 3.3V Vcc by changing the voltage jumper FT232RL board. Make sure that the BOOT 0 jumper is connected to 1 and the BOOT 1 jumper is connected to 0.</li>
+    <img src="../Images/electrical_manufacturing_16.PNG" height="250px">
+    <li class="w3-padding-small">Under Tools > PORT, select the communication port (COM) that corresponds with the USB connection that the Blue pill is connected to.</li>    
+    <li class="w3-padding-small">Insert the code used for the <strong>electrical wetting front detector</strong> (attached at the end of this section) on the IDE text editor. Compile and upload the code onto the Blue Pill.</li>
+  </ul>  
+
+  <h2 class="w3-center">DESIGN FILES</h2>
+  <p>* .ino files for bluepill*</p>
+  <p>* kiCAD files for PCB*</p>
 </div>
 
 
@@ -305,9 +331,9 @@
     </ul>
 
     <h2 class="w3-center">DESIGN FILES</h2>
-    <p>*hyperlink CAD files for box*</p>
-    <p>*hyperlink kiCAD files for PCB*</p>
-    <p>*hyperlink CAD file for cap*</p>
+    <p>* CAD files for box*</p>
+    <p>* kiCAD files for PCB*</p>
+    <p>* CAD file for cap*</p>
   </div>
 </div>
     
@@ -394,7 +420,7 @@
         </ul>
     
         <h2 class="w3-center">DESIGN FILES</h2>
-        <p>*hyperlink CAD file for cap*</p>
+        <p>* CAD file for cap*</p>
         </div>
 
     </div>       
@@ -402,233 +428,7 @@
     
 
 
-    <!-- forth Parallax Image with Porfolio Text-->
-    <div class="bgimg-4 w3-display-container w3-opacity-min">
-        <div class="w3-display-middle">
-          <span class="w3-xxlarge w3-text-white w3-wide">BLUE PILL PROGRAMMING</span>
-        </div>
-    </div>
 
-    <!-- Container (Portfolio Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="portfolio">
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-        qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <div class="w3-row">
-        <div class="w3-col m6 w3-center w3-padding-large">
-          <p><b><i class="fa fa-bolt w3-margin-right"></i>Electrical Moisture</b></p><br>
-          <img src="../Images/prototybetopview.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="300px" height="400px">
-        </div>
-
-        <!-- Hide this text on small devices -->
-        <div class="w3-col m6 w3-hide-small w3-padding-large">
-          <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-
-
-
-      </div>
-      <h3 class="w3-padding-16 w3-text-grey w3-center">Rating against key specifications</h3>
-      <h5 class="w3-padding-16 w3-text-grey">List of parts</h5>
-
-      <table class="w3-table-all w3-hoverable">
-      <tr class="w3-hover-blue">
-        <th>Metric</th>
-        <th>Weighting</th>
-        <th>Market Standard</th>
-        <th>MS Score</th>
-        <th>Electrical Dector</th>
-        <th>ED Score</th>
-      </tr>
-      <tr class="w3-hover-blue">
-        <td>Accuracy</td>
-        <td>2</td>
-        <td>10cm</td>
-        <td>Datum</td>
-        <td>1cm</td>
-        <td>+1</td>
-
-      </tr>
-      <tr class="w3-hover-blue">
-        <td>Price</td>
-        <td>5</td>
-        <td>£81.64 (+Import Tax)</td>
-        <td>Datum</td>
-        <td>£30 (Prototype)</td>
-        <td>+2</td>
-
-      </tr>
-      <tr class="w3-hover-blue">
-        <td>Locally Sourced Components</td>
-        <td>4</td>
-        <td>Not manufacturable in Ethiopia</td>
-        <td>Datum</td>
-        <td>Some parts not locally available (electronics)</td>
-        <td>+1</td>
-
-      </tr>
-      <tr class="w3-hover-blue">
-        <td>Durability</td>
-        <td>3</td>
-        <td>PVC - AAAC</td>
-        <td>Datum</td>
-        <td>Robust design but vunerability due to electronic components</td>
-        <td>-1</td>
-
-
-
-      </tr>
-      <tr class="w3-hover-blue">
-        <td>Usabiltiy</td>
-        <td>4</td>
-        <td>Scientist Gardner reviewed it positively</td>
-        <td>Datum</td>
-        <td>Very easy to use (see <a href="how_to_use.html">User Manual</a>). Simple LED user interface</td>
-        <td>0</td>
-
-
-
-      </tr>
-      <tr class="w3-hover-blue">
-        <td>Environmentally Friendly</td>
-        <td>2</td>
-        <td>&lt;1% of PVC is recycled - production releases harmful toxins (diatoxin)</td>
-        <td>Datum</td>
-        <td>Pipe is very common matrial, can be from a reclaimed source. Low power consumption.</td>
-        <td>+1</td>
-
-
-      </tr>
-      </table>
-
-
-
-      <h5 class="w3-padding-32 w3-text-grey">Bars Example</h5>
-
-      <p class="w3-wide">Accuracy</p>
-      <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-      </div>
-      <p class="w3-wide">Durability</p>
-      <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:85%"></div>
-      </div>
-      <p class="w3-wide">Cost</p>
-      <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-      </div>
-      <p class="w3-wide">Ease of manufacture</p>
-      <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:10%"></div>
-      </div>
-      <p class="w3-wide">Ease of Use</p>
-      <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-      </div><br>
-
-      <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey w3-hover-grey">
-        <div class="w3-quarter w3-section ">
-          <span class="w3-xlarge">&lt £30 </span><br>
-          Cost of Protoype
-        </div>
-        <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">3+</span><br>
-          Years of Use
-        </div>
-        <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">1 Billion People</span><br>
-          Potential impact
-        </div>
-        <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">4 weeks</span><br>
-          World class research and development
-        </div>
-      </div>
-      <h3 class="w3-center">ROBUST & EASY TO USE CIRCUITRY</h3>
-      <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
-
-      <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-      <div class="w3-row-padding w3-center">
-        <div class="w3-col m3">
-          <img src="/Images/circuit.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
-        </div>
-
-        <div class="w3-col m3">
-          <img src="/Images/circuit.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
-        </div>
-
-        <div class="w3-col m3">
-          <img src="/Images/electarty2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-        </div>
-
-        <div class="w3-col m3">
-          <img src="../Images/electarty2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-        </div>
-      </div>
-
-      <div class="w3-row-padding w3-center w3-section">
-        <div class="w3-col m3">
-          <img src="../Images/electarty2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
-        </div>
-
-        <div class="w3-col m3">
-          <img src="/Images/electarty2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
-        </div>
-
-        <div class="w3-col m3">
-          <img src="/Images/electarty2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
-        </div>
-
-        <div class="w3-col m3">
-          <img src="/Images/electarty2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-        </div>
-        <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
-      </div>
-    </div>
-
-    <!-- Modal for full size images on click-->
-    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-      <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-        <img id="img01" class="w3-image">
-        <p id="caption" class="w3-opacity w3-large"></p>
-      </div>
-    </div>
-
-    <!-- Third Parallax Image with Portfolio Text -->
-    <div class="bgimg-3 w3-display-container w3-opacity-min">
-      <div class="w3-display-middle">
-         <span class="w3-xxlarge w3-text-white w3-wide" style="text-align: center">MECHANICAL DESIGN</span>
-      </div>
-    </div>
-
-
-    <!-- Portfolio Section -->
-    <div class="w3-padding-64 w3-content" id="photos">
-      <h2 class="w3-text-grey">More photos</h2>
-      <hr style="width:200px" class="w3-opacity">
-
-      <!-- Grid for photos -->
-      <div class="w3-row-padding" style="margin:0 -16px">
-        <div class="w3-half">
-
-
-          <img src="/Images/prototybetopview.jpg" style="width:100%">
-          <img src="/Images/endelec.jpg" style="width:100%">
-        </div>
-
-        <div class="w3-half">
-          <img src="/Images/endelect(2).jpg" style="width:100%">
-          <img src="/Images/electarty2.jpg" style="width:100%">
-          <img src="/Images/electprotoarty.jpg" style="width:100%">
-          <img src="/Images/endelec3.jpg" style="width:100%">
-        </div>
-      <!-- End photo grid -->
-      </div>
-    <!-- End Portfolio Section -->
-    </div>
 
 
 
