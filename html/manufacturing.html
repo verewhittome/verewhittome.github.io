@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Background</title>
+  <link rel="css/farm.css" type="text/css" href="theme.css">
+  <link rel="stylesheet" type="text/css" href="/css/dropdown.css">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script defer src="/javascript/dropdown.js"></script>
+
+    <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 200px;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 200px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+      #main {margin-left: 0}
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+          background-attachment: scroll;
+      }}
+
+    /* Create a Parallax Effect */
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+        background-image: url('../Images/electprotoarty.jpg');
+        min-height: 600px;
+        min-width: 80%;
+
+    }
+
+    /* Second image (Portfolio) */
+    .bgimg-2 {
+        background-image: url("../Images/endelect.jpg");
+        min-height: 400px;
+
+    }
+
+    /* Third image (Contact) */
+    .bgimg-3 {
+        background-image: url("../Images/electrical_manufacturing_20.jpeg");
+        min-height: 400px;
+    }
+    
+    /* forth image (Contact) */
+     .bgimg-4 {
+        background-image: url("../Images/circuit.jpg");
+        min-height: 400px;
+    }
+
+    .w3-wide {letter-spacing: 10px;}
+    .w3-hover-opacity {cursor: pointer;}
+
+
+    </style>
+  </head>
+    <body>
+
+      <!-- Icon Bar (Sidebar - hidden on small screens) -->
+      <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="color: black">
+        <!-- Avatar image in top left corner -->
+        <img src="https://www.emma.cam.ac.uk/images/supporting/kabla1.jpg" style="width:100%">
+        <a href="farm.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+          <i class="fa fa-home w3-large"></i>
+          <p style="font-size:15px">HOME</p>
+        </a>
+        <a href="background.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+          <i class="fa fa-tint w3-large"></i>
+          <p style="font-size:15px">BACKGROUND</p>
+    </a>
+          <button class="dropdown-btn w3-bar-item w3-button w3-black w3-padding-large">
+            <i class="fa fa-bolt w3-large"></i> <br/>
+             ELECTRICAL MOISTURE
+            <i class="fa fa-caret-down"></i>
+            </button>
+              <div class="dropdown-container">
+                <a href="electrical.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Product Overview</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Specifications</a>
+                <a href="how_to_use.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">How to Use</a>
+                <a href="electricalteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The electrical team</a>
+
+              </div>
+
+        <!-- w3-bar-item w3-padding-large w3-black -->
+        <button class="dropdown-btn w3-bar-item w3-button w3-hover-black">
+          <i class="fa fa-cogs w3-large"></i> <br/>
+          MECHANICAL MOISTURE
+          <i class="fa fa-caret-down"></i>
+          </button>
+            <div class="dropdown-container">
+              <a href="mech_touchy_bottle.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Touchy Bottle</a>
+              <a href="mech_core_sampler.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Soil Core Sampler</a>
+              <a href="mech_wetting.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Bouyant wetting front detector</a>
+              <a href="mechteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The mechanical team</a>
+
+            </div>
+        </a>
+
+        <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+          <i class="fa fa-envelope w3-large"></i>
+          <p style="font-size:15px">CONTACT</p>
+        </a>
+
+      </nav>
+
+
+    <!-- First Parallax Image with Logo Text -->
+
+        <div class="bgimg-1 w3-display-container w3-opacity-min">
+          <div class="w3-display-middle">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MANUFACTURING </span>
+          </div>
+        </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <!-- <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+      <div class="w3-display-middle" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Mechanical <span class="w3-hide-small">Team</span></span>
+      </div>
+    </div> -->
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about" style="margin-left:20%;">
+      <h3 class="w3-center">MANUFACTURING GUIDE</h3>
+      <p>Welcome to the manufacturing guide! This page contains all the neccesery steps to build your very own <strong>wetting front detector</strong>! Building the <strong>wetting front detector</strong> has three main steps:</p>
+      <ul style="list-style-type:circle">
+        <li class="w3-padding-small">Understanding the how the circuitry works and programming the Blue Pill microcontroller.</li>
+        <li class="w3-padding-small">Constructing the reader module</li>
+        <li class="w3-padding-small">Constructing the sensor module</li>
+      </ul>
+
+      <p>Click on the buttons below to skip to a section.(can we make them buttons?)</p>
+      <h4 class="w3-center">Circuitry and Programming</h4>
+      <h4 class="w3-center">Reader Construction</h4>
+      <h4 class="w3-center">Sensor Construction</h4>
+    
+    </div>
+    
+ <!-- second Parallax Image with Porfolio Text-->
+ <div class="bgimg-4 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">CIRCUITRY AND PROGRAMMING</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h2 class="w3-center">OVERVIEW</h2>
+  <p>As saturated soil has a drastically different resistance when compared to dry soil, the resistivity can be used as a method of measuring the wetting front. The basic principle of how the <strong>electrical wetting front detector</strong> works is by measuring the voltage (proportional to resistivity) between two metal strips (sensor) in the soil and lighting up an LED if the resistivity drops below a threshold value (determined during calibration). The circuitry for the electrical wetting front detector can be divided into two main sections.</p>
+  <ul style="list-style-type:circle">
+    <li class="w3-padding-small">The sensor circuitry to give a reading of soil resistivity.</li>
+    <li class="w3-padding-small">The microcontroller (STM32F103C8 Blue Pill) used to calibrate, read and light up the LEDs to signal the wetting front.</li>
+  </ul>
+  <p>All circuitry and electrical components for the <strong>wetting front detector</strong> are soldered onto the custom PCB. Relevant files needed to fabricate this PCB can be found at the end of this section.</p>
+
+  <h2 class="w3-center">SENSOR CIRCUITRY</h2>
+  <p>The circuit shown on the left is a simple circuit used to measure the voltage (and hence the resistance) between V1 and GND (representing the two metal strips). The way the circuit operates is as follows:</p>
+
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <br>
+      <img src="../Images/electrical_manufacturing_12.PNG" alt="Photo of Me" height="450px">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+        <ul style="list-style-type:circle">
+          <li class="w3-padding-small">When the two metal strips are in contact with dry soil, the resistance between V1 and GND is very high and the two metal strips are effectively non conductive.</li>
+          <li class="w3-padding-small">Since no current flows, the point V1 is at 3.3V. The micro controller reads this high value and sets the corresponding LED to be off.</li>
+          <li class="w3-padding-small">When the metal strips are in contact with wet soil, the resistance between V1 and GND is low and there is a conductive path between the two metal strips.</li>
+          <li class="w3-padding-small">The microcontroller reads this low value and turns the corresponding LED on, signalling that the wetting front has reached the depth of the metal strips.</li>
+          <li class="w3-padding-small">Note that the capacitor is present to eliminate any AC signals that may interfere with the readings.</li>
+        </ul>
+    </div>
+  </div>
+
+  <h2 class="w3-center">PROGRAMMING THE MICROCONTROLLER</h2>
+  <p>The microcontroller used is a STM32F103C8 "Blue Pill". When compared with an Arduino UNO, the Blue Pill has higher performance, lower power consumption and lower cost. There are multiple ways of programming the microcontroller such as using a JTAG adapter, an mbed platform (eg: nucleo board) or a USB to ttl serial adapter. The pinout  capabilities of the Blue Pill is shown below</p>
+  <img src="../Images/electrical_manufacturing_13.PNG" height="450px">
+  <p>source: http://wiki.stm32duino.com/index.php?title=Blue_Pill</p>
+  <p>In this guide, we shall take the USB to ttl serial adapter approach. We will be using a FT232RL board as the serial to ttl adapter as a low cost option (available for less than £1). The arduino integrated development environment (IDE) will be used in conjunction with the FT232RL board to program the Blue Pill.</p>
+  <p>The steps below outline the process of programming the Blue Pill</p>
+
+  <ul style="list-style-type:circle">
+    <li class="w3-padding-small">First download the Arduino IDE here: https://www.arduino.cc/en/Main/Software?</li>
+    <li class="w3-padding-small">Once opened, you will need to add the STM32F103C8 board using the boards manager. Go to Tools > Board > Boards Manager and search for "STM32F103". The expected window is shown below. Click install.</li>
+    <img src="../Images/electrical_manufacturing_14.PNG" height="400px">
+    <li class="w3-padding-small">Under tools. change the board to "Generic STM32F103C series" and make sure the other settings are as follows:</li>
+    <img src="../Images/electrical_manufacturing_15.PNG" height="250px">
+    <li class="w3-padding-small">Connect the Blue Pill to the FT232RL board which connects to the computer's USB as shown below, a breadboard is recommended for this. The Tx and RX wires are the serial links and the 5V and GND wires provide power to the Blue Pill. It is also possible to use the 3.3V Vcc by changing the voltage jumper FT232RL board. Make sure that the BOOT 0 jumper is connected to 1 and the BOOT 1 jumper is connected to 0.</li>
+    <img src="../Images/electrical_manufacturing_16.PNG" height="250px">
+    <li class="w3-padding-small">Under Tools > PORT, select the communication port (COM) that corresponds with the USB connection that the Blue pill is connected to.</li>    
+    <li class="w3-padding-small">Insert the code used for the <strong>electrical wetting front detector</strong> (attached at the end of this section) on the IDE text editor. Compile and upload the code onto the Blue Pill.</li>
+  </ul>  
+
+  <h2 class="w3-center">DESIGN FILES</h2>
+  <p>* .ino files for bluepill*</p>
+  <p>* kiCAD files for PCB*</p>
+</div>
+
+
+<!-- third Parallax Image with Porfolio Text-->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">READER CONSTRUCTION</span>
+  </div>
+</div>
+
+
+
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <div class=" w3-center">
+        <div class="w3-col m3">
+          <img src="../Images/electrical_manufacturing_16.JPEG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="../Images/electrical_manufacturing_17.JPEG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="../Images/electrical_manufacturing_21.JPEG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="../Images/electrical_manufacturing_22.JPEG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+        </div>
+    </div>
+
+<h2 class="w3-center">PARTS LIST</h2>    
+<h3 class="w3-padding-16">Mechanical parts</h3>    
+<table class="w3-table-all w3-hoverable ">
+  <tr class="w3-hover-blue">
+    <th>Part</th>
+    <th>Quantity</th>
+    <th>Specification</th>
+  </tr>
+
+  
+  <tr class="w3-hover-blue">
+        <td>3D printed box and lid</td>
+        <td>1</td>
+        <td>3D printed or injection molded. Refer to the design files in this section for relevant files needed for manufacturing.</td>
+    </tr>
+    <tr class="w3-hover-blue">
+            <td>Nuts and Bolts</td>
+            <td>10 (Bolts), 10 (Nuts)</td>
+            <td>M3 (3 mm diameter). Any material that is conductive and resistant to corrosion.</td>
+    </tr>
+    <tr class="w3-hover-blue">
+        <td>spring</td>
+        <td>5</td>
+        <td>4 mm x 3 mm (diameter x length). A spring from a retractable pen cut into 2 mm sections works best.</td>
+    </tr>
+  </table>
+
+<h3 class="w3-padding-16">Electrical parts</h3>
+<table class="w3-table-all w3-hoverable ">
+<tr class="w3-hover-blue">
+  <th>Part</th>
+  <th>Quantity</th>
+  <th>Specification</th>
+</tr>
+
+
+
+  <tr class="w3-hover-blue">
+          <td>Custom Printed circuit board (PCB)</td>
+          <td>1</td>
+          <td>This PCB will contain footprints for the microcontroller, battery housing, components for the sensor circuit, Switches and LED. Refer to the design files in this section for relevant files</td>
+  </tr>
+  <tr class="w3-hover-blue">
+          <td>STM32F103C8 microcontroller (Blue Pill)</td>
+          <td>1</td>
+          <td>microcontroller used to read sensor values and calibrate the reader.</td>
+  </tr>
+  <tr class="w3-hover-blue">
+          <td>AAA battery housing</td>
+          <td>1</td>
+          <td>AAA size battery housing that fits 3 AAA batteries in series to produce a 4.5V output.</td>
+  </tr>
+  <tr class="w3-hover-blue">
+          <td>AAA battery</td>
+          <td>3</td>
+          <td>1.5V AAA batteries.</td>
+  </tr>
+  <tr class="w3-hover-blue">
+          <td>Resistor</td>
+          <td>4</td>
+          <td>10kΩ resistors for sensor circuit.</td>
+  </tr>
+  <tr class="w3-hover-blue">
+          <td>Capacitor</td>
+          <td>4</td>
+          <td>10µF capacitors for sensor circuit.</td>
+  </tr>
+  <tr class="w3-hover-blue">
+      <td>slide switch</td>
+      <td>1</td>
+      <td>Through hole slide switch. found here: http://uk.farnell.com/c-k-components/os102011ms2qn1/switch-spdt-0-1a-12v-pcb/dp/1201430?ost=1201430&ddkey=http%3Aen-GB%2FElement14_United_Kingdom%2Fsearch</td>
+  </tr>            
+  <tr class="w3-hover-blue">
+      <td>button</td>
+      <td>1</td>
+      <td>Through hole button. found here: http://uk.farnell.com/alcoswitch-te-connectivity/fsm8jh/switch-spst-0-05a-24vdc-pcb/dp/1555985?ost=479-1435&iscrfnonsku=true&ddkey=http%3Aen-GB%2FElement14_United_Kingdom%2Fsearch</td>
+  </tr>
+  <tr class="w3-hover-blue">
+      <td>LED</td>
+      <td>5</td>
+      <td>Through hole 5mm LED.</td>
+  </tr>
+  <tr class="w3-hover-blue">
+    <td>Solid core wire</td>
+    <td>5</td>
+    <td>80 mm </td>
+  </tr>                          
+</table>
+
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+<h2 class="w3-center">BUILD PROCESS</h2>    
+<p> The build plan of the reader module is outlined below.</p>
+
+
+    <ul style="list-style-type:circle">
+    <li class="w3-padding-small">3D print the box and lid of the reader module. Screw on the nuts and bolts to the 3D with the spring in between the bolt and box. This creates a spring loaded contact point that ensure a stable electrical connection when in use.</li>
+    <li class="w3-padding-small">Attach the wires to the bolts using a second nut. This forms the interface to the sensor module. Although the matching of wire to screw configuration is not critical, it is recommended that the middle screw is used for ground.</li>
+    <img src="../Images/electrical_manufacturing_11.PNG" height="300px">
+    <li class="w3-padding-small">Solder the components onto the PCB using the diagrams below. <strong>Ensure that the Blue Pill microcontroller has been programmed before soldering</strong>. If you are unsure if the microcontroller has been prorgammed correctly, you may want to solder sil sockets onto the PCB first. Note that the LEDs, button and switch are on the top side of the PCB and the remaining components are on the bottom side.</li>
+    <img src="../Images/electrical_manufacturing_8.png" height="350px">
+    <img src="../Images/electrical_manufacturing_7.png" height="350px">
+    <li class="w3-padding-small">Solder the wires to the PCB noting the ground wire and insert the batteries into the battery holder.</li>
+    <li class="w3-padding-small">Test the circuit to ensure the soldering is correct and and the circuit is working. This can be done by creating a conductive path between and bolt and the "ground" bolt and observing that a LED turns on.</li>
+    <li class="w3-padding-small">Place the PCB in the box aligning the mounting holes. Put the lid on and screw the box shut</li>
+    <li class="w3-padding-small">The final product should look like this:</li>
+    <img src="../Images/electrical_manufacturing_18.JPEG" height="250px"> 
+    <img src="../Images/electrical_manufacturing_19.JPEG" height="2 50px">     
+    </ul>
+
+    <h2 class="w3-center">DESIGN FILES</h2>
+    <p>* CAD files for box*</p>
+    <p>* kiCAD files for PCB*</p>
+    <p>* CAD file for cap*</p>
+  </div>
+</div>
+    
+    <!-- forth Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">SENSOR CONSTRUCTION</span>
+      </div>
+    </div> 
+    
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+      
+      <div class=" w3-center w3-padding-large">
+        <img src="../Images/electrical_manufacturing_1.png" alt="Photo of Me" width="500px">
+      </div>
+
+      <h2 class="w3-center">PARTS LIST</h2>
+
+
+      <table class="w3-table-all w3-hoverable ">
+      <tr class="w3-hover-blue">
+        <th>Part</th>
+        <th>Quantity</th>
+        <th>Specification</th>
+      </tr>
+
+      
+      <tr class="w3-hover-blue">
+            <td>PVC tubing</td>
+            <td>1</td>
+            <td>40mm x 600mm.</td>
+        </tr>
+        <tr class="w3-hover-blue">
+                <td>Flange head rivets</td>
+                <td>24</td>
+                <td>3mm gauge. corrosion resistant material</td>
+        </tr>
+        <tr class="w3-hover-blue">
+                <td>Metal strips</td>
+                <td>8</td>
+                <td>131mm x 7mm x 1mm. Any material that is conductive and resistant to corrosion. Stainless steel is recommended</td>
+        </tr>
+        <tr class="w3-hover-blue">
+                <td>Solid core wire</td>
+                <td>8</td>
+                <td>600mm length. Preferably 4 of one colour (signal) and 4 of another colour (ground).</td>
+        </tr>
+        <tr class="w3-hover-blue">
+                <td>Nuts and Bolts</td>
+                <td>5 (Bolts), 10 (Nuts)</td>
+                <td>M3 (3 mm diameter). Any material that is conductive and resistant to corrosion.</td>
+        </tr>
+        <tr class="w3-hover-blue">
+                <td>Cap</td>
+                <td>1</td>
+                <td>3D printed or injection molded. Refer to the design files in this section for relevant files needed for manufacturing</td>
+        </tr>
+    
+      </table>
+
+
+        
+        <div class="w3-content w3-container w3-padding-64" id="portfolio">
+          <h2 class="w3-center">BUILD PROCESS</h2>    
+          <p> The build plan of the sensor module is outlined below.</p>
+        
+        
+        <ul style="list-style-type:circle">
+          <li class="w3-padding-small">Measure and cut the metal strips according to the dimensions specified and drill holes at the marker points shown below. Note that a small area is left at one end to allow for the wire to be crimped.</li>
+          <img src="../Images/electrical_manufacturing_2.PNG" height="150px">
+          <li class="w3-padding-small">Strip and crimp one end of the wire to the metal strip.</li>
+          <li class="w3-padding-small">Wrap the metal around the PVC tube at spacings as shown below.</li>
+          <img src="../Images/electrical_manufacturing_3.PNG" height="200px">
+          <img src="../Images/electrical_manufacturing_4.PNG" height="200px">
+          <img src="../Images/electrical_manufacturing_5.PNG" height="200px">
+          <li class="w3-padding-small">Attach the metal strips to the PVC tube using rivets. Don't forget to drill an extra hole for each strip just above the crimped wire to route the wire into the tube! The result should look like this:</li>
+          <li class="w3-padding-small">3D print the cap for the sensor module (relevant file at the end of this section). If a 3D printer is not avaliable, the top cap can be milled using a lathe and hand drill.</li>
+          <img src="../Images/electrical_manufacturing_9.JPG" height="200px">
+          <li class="w3-padding-small">Screw on the nuts and bolts to the cap and attach the wires to the bolts using a second nut. This forms the interface to the reader module. Although the matching of wire to screw configuration is not critical, it is recommended that the middle screw is used for ground.</li>
+          <li class="w3-padding-small">Test that the metal strips are electrically conductive all the way to the screws on the cap using a multimeter.</li>
+          <li class="w3-padding-small">Optional but recommended: fill the inside of the cap with hot glue or silicon to create a waterproof seal and secure the electrical connection.</li>
+          <li class="w3-padding-small">Finally, secure the cap to the PVC tube using hot glue or silicon. the final product should look like this:</li>
+          <img src="../Images/prototybetopview.JPG" height="300px">
+        </ul>
+    
+        <h2 class="w3-center">DESIGN FILES</h2>
+        <p>* CAD file for cap*</p>
+        </div>
+
+    </div>       
+
+    
+
+
+
+
+
+
+    <script>
+
+
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+    // Change style of navbar on scroll
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        } else {
+            navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+        }
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    </script>
+
+
+    </body>
+    </html>
+
+
+
+
+  </body>
+</html>
