@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test Methodology</title>
+    <link rel="css/farm.css" type="text/css" href="theme.css">
+    <link rel="stylesheet" type="text/css" href="/css/dropdown.css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="/javascript/dropdown.js"></script>
+
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .w3-row-padding img {
+            margin-bottom: 12px
+        }
+
+        /* Set the width of the sidebar to 120px */
+
+        .w3-sidebar {
+            width: 200px;
+        }
+
+        /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+
+        #main {
+            margin-left: 200px
+        }
+
+        /* Remove margins from "page content" on small screens */
+
+        @media only screen and (max-width: 600px) {
+            #main {
+                margin-left: 0
+            }
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-attachment: scroll;
+            }
+        }
+
+        /* Create a Parallax Effect */
+
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* First image (Logo. Full height) */
+
+        .bgimg-1 {
+            background-image: url('../Images/irrigation_background.jpeg');
+            min-height: 600px;
+            min-width: 80%;
+
+        }
+
+        .w3-wide {
+            letter-spacing: 10px;
+        }
+
+        .w3-hover-opacity {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="color: black; width: 15%; height:100%;">
+      <!-- Avatar image in top left corner -->
+      <img src="https://www.emma.cam.ac.uk/images/supporting/kabla1.jpg" style="width:100%">
+      <a href="farm.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-home w3-large"></i>
+        <p style="font-size:15px">HOME</p>
+      </a>
+      <a href="background.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-tint w3-large"></i>
+        <p style="font-size:15px">BACKGROUND</p>
+  </a>
+        <button class="dropdown-btn w3-bar-item w3-button w3-black w3-padding-large">
+          <i class="fa fa-bolt w3-large"></i> <br/>
+           ELECTRICAL MOISTURE
+          <i class="fa fa-caret-down"></i>
+          </button>
+            <div class="dropdown-container">
+              <a href="electrical.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Product Overview</a>
+              <a href="tech_specs" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Technical Specifications</a>
+              <a href="manufacturing.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Manufacturing</a>
+              <a href="how_to_use.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">How to Use</a>
+              <a href="electricalteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The Electrical Team</a>
+
+            </div>
+
+      <!-- w3-bar-item w3-padding-large w3-black -->
+      <button class="dropdown-btn w3-bar-item w3-button w3-hover-black">
+        <i class="fa fa-cogs w3-large"></i> <br/>
+        MECHANICAL MOISTURE
+        <i class="fa fa-caret-down"></i>
+        </button>
+          <div class="dropdown-container">
+            <a href="mech_touchy_bottle.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Touchy Bottle</a>
+            <a href="mech_core_sampler.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Soil Core Sampler</a>
+            <a href="mech_wetting.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Bouyant wetting front detector</a>
+            <a href="mechteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The Mechanical team</a>
+
+          </div>
+      </a>
+
+      <a href="comparison.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-balance-scale w3-large"></i>
+        <p style="font-size:15px">COMPARISON</p>
+      </a>
+
+    </nav>
+
+
+    <!-- First Parallax Image with Logo Text -->
+
+    <div class="bgimg-1 w3-display-container w3-opacity-min" style="margin-left:15%">
+        <div class="w3-display-middle">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">
+                <span class="w3-hide-small">Test Methodology</span>
+            </span>
+        </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" style="margin-left:20%">
+        <!-- <h3 class="w3-center">How to use the electronic wetting front detector</h3> -->
+        <p>Welcome to the Test Methodology page! This page contains some information about the testing phase of the prototypes.</p>
+        <div style="margin-top:50px"></div>
+        <h3 class="w3-center">Overview</h3>
+        <p>All prototypes of the solutions(both electrical and mechanical) must go through at least two phases of testing: small-scale test and full-scale test. For small-scale test, a cup of moist soil is enough to illustrate 
+            whether the solution is physically feasible. For full-scale test, a test rig must be designed and fabricated to simulate the real farming field environment so that the verification process of the full-scale
+         prototypes can be conducted. </p>
+        <div style="margin-top:50px"></div>
+        <h3 class="w3-center">Design requirements</h3>
+        <p>
+        The test rig must be:
+        </p>
+        <p>1. Similar to the real farming situation</p>
+        <p>2. Strong enough to hold the soil up to 50cm deep and leak proof</p>
+        <p>3. Transparent at least one side to enable wetting front observation </p>
+        <p>4. Possible to fabricate in Dyson centre</p>
+
+        <div style="margin-top:50px"></div>
+        <h3 class="w3-center">Test rig design iterations</h3>
+        <p>
+            The figure below shows the first design: A 70cm long, 20cm in diameter,3mm thick, clear acrylic cylinder with a square base.
+        </p>
+        <p>The main advantage of this design is that the wetting front can be observed 360 degree around the cylinder. 
+           However, fabrication of this rig is going to be very expensive(~£70), and hot rolling acrylic sheet is not feasible in Dyson centre.</p>
+
+        <img src="../Images/test_rig1.png" height="400px">
+        <p>
+            As a result, another test rig is designed to address these issues. The next three figures show the improved design and the final test rig I fabricated: A 75cm long, 30cm x 30cm aluminium box with one clear side made from acrylic.
+            The base of the box is riveted to the sides rather than welded for three reasons: ease of assembly, time-saving and avoiding weld distortion.
+            The acrylic side is glued to the aluminium because other fasteners(e.g. rivets, nuts and bolts) are very like to crack the acrylic sheet. After assembling,
+             Silicone is carefully applied to all the gaps and seams to ensure that the box is perfectly leak proof.   </p> 
+
+        <img src="../Images/test_rig2.jpg" style="height:600px;">
+        <img src="../Images/test_rig3.jpg" style="height:400px; transform: rotate(0.25turn);">
+        <img src="../Images/test_rig4.jpg" style="height:250px;">
+
+
+            <div style="margin-top:80px"></div>
+            <h3 class="w3-center">Validation</h3>
+            <p>The test rig box is validated during the parallel test between the touchy bottle and the full-scale eletrical wetting front detector.
+                 All design requirements of the test rig are successfully met. </p>
+            <img src="../Images/test_rig5.jpg" style="height:400px;">
+            <img src="../Images/test_rig6.jpg" style="height:400px;">
+            <div style="margin-top:50px"></div>
+            <h3 class="w3-center">Limitations</h3>
+        <p>
+                During the parallel test between the touchy bottle and the electrical wetting front detector, it was noticed that the wetting front was very 
+                non-uniform even for an irrigation area of just 30cm squared. The wetting front at the acrylic side only reached 3cm depth when the wetting front at the centre of the box reached more than 6cm depth.
+                Therefore, it was very hard to directly compare the performance of these two prototypes.
+                However, this experiment was still meaningful. It implied that the wetting front in real fields might be even more <strongnon></strongnon>-uniform, and it would be necessary to use multiple wetting front dectors in each
+                irrigation section to obtain a reasonable estimate of the average wetting front depth.
+        </p>
+

@@ -36,7 +36,7 @@
 
     /* First image (Logo. Full height) */
     .bgimg-1 {
-        background-image: url('/Images/OSTRICH.jpg');
+        background-image: url('/Images/mechteam.jpg');
         min-height: 600px;
         min-width: 80%;
 
@@ -64,7 +64,7 @@
     <body>
 
       <!-- Icon Bar (Sidebar - hidden on small screens) -->
-      <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="color: black">
+      <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="color: black; width: 15%; height:100%;">
         <!-- Avatar image in top left corner -->
         <img src="https://www.emma.cam.ac.uk/images/supporting/kabla1.jpg" style="width:100%">
         <a href="farm.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
@@ -82,9 +82,10 @@
             </button>
               <div class="dropdown-container">
                 <a href="electrical.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Product Overview</a>
-                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Specifications</a>
-                <a href="" class="w3-bar-item w3-button w3-padding-large w3-hover-black">How to Use</a>
-                <a href="electricalteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The electrical team</a>
+                <a href="tech_specs" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Technical Specifications</a>
+                <a href="manufacturing.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Manufacturing</a>
+                <a href="how_to_use.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">How to Use</a>
+                <a href="electricalteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The Electrical Team</a>
 
               </div>
 
@@ -98,14 +99,14 @@
               <a href="mech_touchy_bottle.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Touchy Bottle</a>
               <a href="mech_core_sampler.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Soil Core Sampler</a>
               <a href="mech_wetting.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Bouyant wetting front detector</a>
-              <a href="mechteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The mechanical team</a>
+              <a href="mechteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The Mechanical team</a>
 
             </div>
         </a>
 
-        <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-          <i class="fa fa-envelope w3-large"></i>
-          <p style="font-size:15px">CONTACT</p>
+        <a href="comparison.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+          <i class="fa fa-balance-scale w3-large"></i>
+          <p style="font-size:15px">COMPARISON</p>
         </a>
 
       </nav>
@@ -139,25 +140,28 @@
 
     <!-- Container (Portfolio Section) -->
     <div class="w3-content w3-container w3-padding-64" id="portfolio">
-      <h3 class="w3-center">The team</h3>
-      <p class="w3-center"><em>Here are some of the team<br> Click on the images to make them bigger</em></p><br>
+      <p class="w3-center"><em>Introducing the Mechanical team<br><br>Click on the images to make them bigger</em></p><br>
 
       <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
       <div class="w3-row-padding w3-center">
         <div class="w3-col m3">
-          <img src="/Images/aaron.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+          <img src="/Images/aaron.jpg" style="width:100%; height:250px; border-radius:25%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Aron">
+          <p>Aron - Trade mark expert</p>
         </div>
 
         <div class="w3-col m3">
-          <img src="/Images/charlotte.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+          <img src="/Images/charlotte.jpg" style="width:100%; height:250px; border-radius:25%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Charlotte">
+       <p>Charlotte - The woman with the golden hammer </p>
         </div>
 
         <div class="w3-col m3">
-          <img src="/Images/billy.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+          <img src="/Images/billy.jpg" style="width:100%; height:250px; border-radius:25%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Billy">
+       <p>Billy - CSO (Chief Soil Officer). Likes people touching his bottle</p>
         </div>
 
         <div class="w3-col m3">
-          <img src="/Images/nat.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+          <img src="/Images/nat.jpg" style="width:100%; height:250px; border-radius:25%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Nat">
+       <p>Nat - Emotional control systems design</p>
         </div>
       </div>
 

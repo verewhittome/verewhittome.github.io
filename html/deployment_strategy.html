@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Deployment Strategy</title>
+    <link rel="css/farm.css" type="text/css" href="theme.css">
+    <link rel="stylesheet" type="text/css" href="/css/dropdown.css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="/javascript/dropdown.js"></script>
+
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .w3-row-padding img {
+            margin-bottom: 12px
+        }
+
+        /* Set the width of the sidebar to 120px */
+
+        .w3-sidebar {
+            width: 200px;
+        }
+
+        /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+
+        #main {
+            margin-left: 200px
+        }
+
+        /* Remove margins from "page content" on small screens */
+
+        @media only screen and (max-width: 600px) {
+            #main {
+                margin-left: 0
+            }
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-attachment: scroll;
+            }
+        }
+
+        /* Create a Parallax Effect */
+
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* First image (Logo. Full height) */
+
+        .bgimg-1 {
+            background-image: url('../Images/irrigation_background.jpeg');
+            min-height: 600px;
+            min-width: 80%;
+
+        }
+
+        .w3-wide {
+            letter-spacing: 10px;
+        }
+
+        .w3-hover-opacity {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="color: black; width: 15%; height:100%;">
+      <!-- Avatar image in top left corner -->
+      <img src="https://www.emma.cam.ac.uk/images/supporting/kabla1.jpg" style="width:100%">
+      <a href="farm.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-home w3-large"></i>
+        <p style="font-size:15px">HOME</p>
+      </a>
+      <a href="background.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-tint w3-large"></i>
+        <p style="font-size:15px">BACKGROUND</p>
+  </a>
+        <button class="dropdown-btn w3-bar-item w3-button w3-black w3-padding-large">
+          <i class="fa fa-bolt w3-large"></i> <br/>
+           ELECTRICAL MOISTURE
+          <i class="fa fa-caret-down"></i>
+          </button>
+            <div class="dropdown-container">
+              <a href="electrical.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Product Overview</a>
+              <a href="tech_specs" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Technical Specifications</a>
+              <a href="manufacturing.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Manufacturing</a>
+              <a href="how_to_use.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">How to Use</a>
+              <a href="electricalteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The Electrical Team</a>
+
+            </div>
+
+      <!-- w3-bar-item w3-padding-large w3-black -->
+      <button class="dropdown-btn w3-bar-item w3-button w3-hover-black">
+        <i class="fa fa-cogs w3-large"></i> <br/>
+        MECHANICAL MOISTURE
+        <i class="fa fa-caret-down"></i>
+        </button>
+          <div class="dropdown-container">
+            <a href="mech_touchy_bottle.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Touchy Bottle</a>
+            <a href="mech_core_sampler.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Soil Core Sampler</a>
+            <a href="mech_wetting.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Bouyant wetting front detector</a>
+            <a href="mechteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The Mechanical team</a>
+
+          </div>
+      </a>
+
+      <a href="comparison.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-balance-scale w3-large"></i>
+        <p style="font-size:15px">COMPARISON</p>
+      </a>
+
+    </nav>
+
+
+    <!-- First Parallax Image with Logo Text -->
+
+    <div class="bgimg-1 w3-display-container w3-opacity-min" style="margin-left:15%">
+        <div class="w3-display-middle">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">
+                <span class="w3-hide-small">Deployment Strategy</span>
+            </span>
+        </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" style="margin-left:20%">
+        <!-- <h3 class="w3-center">How to use the electronic wetting front detector</h3> -->
+        <p>Welcome to the Deployment strategy page! This page contains some useful information for NGOs and other third-parties who are 
+          keen to help Ehthiopian farmers fully deploy our product, HACK ROD</p>
+        <div style="margin-top:50px"></div>
+        <h3 class="w3-center">Supply chain and Manufacturing in Ethiopia</h3>
+        <p>
+            Despite its fast economic growth and vast potential for development, Ethiopian industrial supply chain and manucaturing are still relatively undeveloped.
+        </p>
+<p><strong>Electronics industry:</strong> Components and many other supplies for electronics manufacturing are imported,
+   resulting in relatively low domestic value added manufacturing in Ethiopia and a complex supply chain. 
+   The domestic market is currently inadequate for component manufacturing.(Ref.<a href="http://documents.worldbank.org/curated/en/229541499855432360/pdf/117355-WP-P159918-PUBLIC-EthiopiaElectronicsPolicyReportprint.pdf">World Bank report</a>)</p>
+
+<p>As a result, PCBs and all other electrical components must be manufactured and soldered based on our design at relatively low cost
+  in another country(possibly China or India), and then imported to Ethiopia. </p>
+
+<p><strong>Plastics industry</strong>: Over 95% of the raw plastic material(e.g. PET granules and preforms) are imported. However there are currently 
+  more than 100 plastic product manufacturers in Ethiopia. Some major companies are, for example, METEC plastic industry, Ethioplastic and Min2 plast.
+   PVC tubes and casings could be sourced locally from these companies, but the raw material must be imported.</p>
+
+<p><strong>Metal & machine industry</strong>: State-owned industry complex METEC is capable of supplying basic metal products(e.g. metal sheets, rivets, nuts, bolts) 
+  and machines(e.g. drilling machine, bending machine, soldering devices). Therefore metal components could be sourced and assembled locally. </p>
+
+<p><strong>Manufacturing</strong>(based on current prototype): An unskilled general worker should be able to assemble 10 sensors or 20 readers per day after training.
+   If the need increases further, it would be more efficient to set up a assembly line.</p>
+
+<p><strong>Maintenance</strong>: Locally produced batteries(Awash) are available in the Ethiopian market. An engineering service centre might be set up in larger towns 
+  to serve the farmers nearby.</p>
+
+
+<div style="margin-top:50px"></div>
+ <h3 class="w3-center">Costs estimation</h3>
+ <p><strong>Tax</strong>: All imported goods to Ethiopia are subjected to customs duties and taxes, unless exempted by law. Taxes applicable on imported goods 
+   are: Import (Customs) duty(20% in our case), Withholding Tax (a fixed rate of 3%), Excise Tax (0% in our case), VAT (a fixed rate of 15%) and
+    Surtax (a fixed rate of 10%).(Ref.<a href="http://www.erca.gov.et/">Ethiopian Revenues and Customs Authority</a>) Total payable tax is calculated as fellows:</p>
+
+<p>Total Cost of the goods = FOB Cost + Insurance + Freight</p> 
+<p>Total Cost of the goods x Import Customs Duty = A</p> 
+<p>(Total Cost of the goods + A) x Excise Tax Rate (If applicable) = B</p> 
+<p> (Total Cost of the goods + A + B) x VAT = C</p>
+<p>(Total Cost of the goods + A + B + C) x Surtax = D</p>
+<p> Total Cost of the goods x Withholding Tax = E</p>
+<p> TOTAL PAYABLE at THE TIME OF IMPORT = A+B+C+D+E=0.548xTotal Cost of the goods. 
+    </p>
+<p><strong>BOM</strong>: Due to the lack of information about manufacturing cost in Ethiopia, our BOM(bill of materials) cost estimation is based
+   on the assumption that all components are manufactured in China and then imported to Ethiopia for final assembly. The estimated BOM cost is £8.59 per reader, and £2.33 per sensor. Once some of the components become locally sourced, the cost should be lower.</p>
+<p><strong>Labour cost</strong>: As for labour cost, there is no minimum wage required in Ethiopia. The cost of labour is very low in Ethiopia with a wage
+  of £1 per day for unskilled labor and average monthly salary of £200 for a skilled worker.
+  </p>
+<p><strong>Total variable cost</strong>: Based on the information above, the estimated total variable cost is <strong>£8.66 per reader</strong>, and <strong>£2.40 per sensor</strong>.
+    (<a href="https://docs.google.com/spreadsheets/d/1fMbLunitPQlDNzzd1kKtqR3mt5Ux-kLHaSOTZJugiy8/edit#gid=513374012">link to full cost sheet</a>)
+  </p>
+
+  <p><strong>Fixed cost</strong>: Due to the lack of information about Ethiopia(e.g. set-up cost, utility cost,etc.), fixed cost remains unknown, but it should be negligible compared to variable costs.</p>
+<div style="margin-top:50px"></div>
+<h3 class="w3-center">Benefits and Business model</h3>
+<p>Generally speaking, HACK ROD can help farmers to irrigate more precisely, therefore help them reduce the cost of irrigation, 
+  save water, labor and energy, and prevent nutrients in the soil from being washed-off by over-irrigation. However, the costs for irrigation
+   are always strongly site specific: they vary with the nature of the crops, source of water, and topographical, pedological, and geological conditions, 
+   etc. There is no easy way to predict how much of the cost can be reduced before the farmer actually using HACK ROD to irrigate precisely. In addition,
+    although the effectiveness of successfully preserving nutrients in the soil might be reflected by increase in yield in the long term, it is still very hard to
+     demonstrate and quantify. 
+  </p>
+
+<p>For large-scale farms, production-sales model would be useful as the large-scale farms in Ethiopia are keen to improve their irrigation systems to be smarter and more precise. 
+    They are aware of the potential benefits, and would be willing to at least have a trial.</p>
+
+<p>In order to make the small-scale individual farmers aware of these variable and intangible benefits, a <strong>subscription business model</strong> is highly recommended: 
+  </p> 
+  <p>1.Farmers pay a deposit to get one reader, some sensors, and guidance on how to use.  </p>
+<p>2.Farmers can then use HACK ROD in their fields for one year.
+  </p>
+<p>3.If the farmers do perceive benefits and wish to use HACK ROD for the next year, they must pay a subscription fee (to be determined by the owner of the devices).
+   If they don’t think HACK ROD is useful, they can return the devices to get their deposit back.</p>
+
+  <div style="margin-top:50px"></div>
+<h3 class="w3-center">Limitations</h3>
+<p>1.Most suppliers in Ethiopia do not have a English website. Even If some do, the websites are quite basic and not very informative. Therefore, due to the lack of available information,
+    the cost estimation might not be close to the real case. </p>
+<p>2.Our team don't have the resources to test HACK ROD in real Ethiopian fields, thus the analysis in 'Benefits and Business model' section are theoretical 
+    and for reference only, and the benefits mentioned above are not guaranteed. 
+</p>

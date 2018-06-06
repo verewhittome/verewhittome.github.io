@@ -6,14 +6,25 @@
   <title>Background</title>
   <link rel="css/farm.css" type="text/css" href="theme.css">
   <link rel="stylesheet" type="text/css" href="/css/dropdown.css">
+  <link rel="stylesheet" type="text/css" href="/css/unicef.css">
 
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- <link rel='stylesheet' id='wpds_styles-css'  href='https://digitalprinciples.org/wp-content/plugins/wp-discourse-shortcodes/lib/css/styles.css?ver=0.23' type='text/css' media='all' /> -->
+  <!-- <link rel='stylesheet' id='fontello_styles-css'  href='https://digitalprinciples.org/wp-content/plugins/wp-discourse-shortcodes/lib/../assets/fontello/css/fontello.css?ver=0.23' type='text/css' media='all' /> -->
+  <!-- <link rel='stylesheet' id='slick-css'  href='https://digitalprinciples.org/wp-content/themes/gesso/js/lib/slick/slick.css' type='text/css' media='all' /> -->
+  <!-- <link rel='stylesheet' id='style-css'  href='https://digitalprinciples.org/wp-content/themes/gesso/css/styles.css' type='text/css' media='all' /> -->
+  <!-- <link rel='stylesheet' id='tablepress-default-css'  href='https://digitalprinciples.org/wp-content/tablepress-combined.min.css?ver=3' type='text/css' media='all' /> -->
+  <!-- <link rel='stylesheet' id='dashicons-css'  href='https://digitalprinciples.org/wp-includes/css/dashicons.min.css?ver=4.9.6' type='text/css' media='all' /> -->
+  <!-- <link rel='stylesheet' id='kgvid_video_styles-css'  href='https://digitalprinciples.org/wp-content/plugins/video-embed-thumbnail-generator/css/kgvid_styles.css?ver=4.6.20' type='text/css' media='all' / -->
+
   <script defer src="/javascript/dropdown.js"></script>
 
     <style>
     body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    body{background-color: white;}
     .w3-row-padding img {margin-bottom: 12px}
     /* Set the width of the sidebar to 120px */
     .w3-sidebar {width: 200px;}
@@ -71,10 +82,18 @@
           <i class="fa fa-home w3-large"></i>
           <p style="font-size:15px">HOME</p>
         </a>
-        <a href="background.html" class="w3-bar-item w3-button w3-padding-large w3-black">
-          <i class="fa fa-tint w3-large"></i>
-          <p style="font-size:15px">BACKGROUND</p>
-    </a>
+        <button class="dropdown-btn w3-bar-item w3-button w3-hover-black w3-padding-large">
+          <i class="fa fa-bolt w3-large"></i> <br/>
+           BACKGROUND
+          <i class="fa fa-caret-down"></i>
+          </button>
+            <div class="dropdown-container">
+              <a href="background.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Problem Statment</a>
+              <a href="background_unicef.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Unicef Principles of Digital Design</a>
+
+
+            </div>
+
           <button class="dropdown-btn w3-bar-item w3-button w3-hover-black w3-padding-large">
             <i class="fa fa-bolt w3-large"></i> <br/>
              ELECTRICAL MOISTURE
@@ -82,8 +101,8 @@
             </button>
               <div class="dropdown-container">
                 <a href="electrical.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Product Overview</a>
-                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Specifications</a>
-                <a href="" class="w3-bar-item w3-button w3-padding-large w3-hover-black">How to Use</a>
+                <a href="manufacturing.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Specifications</a>
+                <a href="how_to_use.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">How to Use</a>
                 <a href="electricalteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The electrical team</a>
 
               </div>
@@ -126,79 +145,196 @@
     </div> -->
 
     <!-- Container (About Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="about">
-      <h3 class="w3-center">The Problem</h3>
-      <p class="w3-center"><em></em></p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-        qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <div class="w3-row">
-        <div class="w3-col m6 w3-center w3-padding-large">
-          <p><b><i class="fa fa-cogs w3-margin-right"></i>Mechy Moist</b></p><br>
-          <img src="/Images/" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
-        </div>
+    <div class="w3-content w3-container w3-padding-64" id="about" style="margin-left:20%;">
+      <h2 class="w3-center">The Problem Statement</h2>
 
-        <!-- Hide this text on small devices -->
-        <div class="w3-col m6 w3-hide-small w3-padding-large">
-          <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-      </div>
+      <p class="w3-center"><em>Optimise water usage in Ethiopian agriculture</em></p>
+
+     <h4 class="w3-center">An Engineering Approach</h4>
+
+
+     <ul style="list-style-type:circle">
+       <li class="w3-padding-small">Aid Ethiopian farmers in detecting the wetting front so that farmers can carry out irrigation optimally.</li>
+       <li class="w3-padding-small">Follow the UNICEF principles of digital design</li>
+       <li class="w3-padding-small">Keep costs lower than $30 to remain affordable for Ethiopian farmers (current solution “fullstop” is at least $60)</li>
+     </ul>
+</div>
 
 
 
+          <!-- Third Parallax Image with Portfolio Text -->
+          <div class="bgimg-3 w3-display-container w3-opacity-min">
+            <div class="w3-display-middle" style="margin-left:8%">
+               <span class="w3-xxlarge w3-text-white w3-wide">Our metrics of performance</span>
+            </div>
+          </div>
 
-    <!-- Second Parallax Image with Portfolio Text -->
-    <div class="bgimg-2 w3-display-container w3-opacity-min">
-      <div class="w3-display-middle">
-        <span class="w3-xxlarge w3-text-white w3-wide">Key Metrics</span>
-      </div>
-    </div>
+
+    <div class="w3-content w3-container w3-padding-64" id="portfolio"style="margin-left:20%">
+
 
     <!-- Container (Portfolio Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="portfolio">
-      <h3 class="w3-center">MY WORK</h3>
-      <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+      <h3 class="w3-center">Current performance of the market standard (Full Stop Wetting Front Detector)</h3>
+      <p class="w3-center"><em>Comparison table for Technology for the Poorest Billion&trade;'s products</em></p><br>
 
-      <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-      <div class="w3-row-padding w3-center">
-        <div class="w3-col m3">
-          <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
-        </div>
+      <table class="w3-table-all w3-hoverable">
+      <tr class="w3-hover-blue">
+        <th>Metric</th>
+        <th>Weighting</th>
+        <th>Market Standard</th>
+        <th>Score</th>
+      </tr>
+      <tr class="w3-hover-blue">
+        <td>Accuracy</td>
+        <td>3</td>
+        <td>10cm</td>
+        <td>Datum</td>
 
-        <div class="w3-col m3">
-          <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
-        </div>
+      </tr>
+      <tr class="w3-hover-blue">
+        <td>Price</td>
+        <td>5</td>
+        <td>£81.64 (+Import Tax)</td>
+        <td>Datum</td>
 
-        <div class="w3-col m3">
-          <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-        </div>
+      </tr>
+      <tr class="w3-hover-blue">
+        <td>Locally Sourced Components</td>
+        <td>4</td>
+        <td>Not manufacturable in Ethiopia</td>
+        <td>Datum</td>
 
-        <div class="w3-col m3">
-          <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-        </div>
-      </div>
+      </tr>
+      <tr class="w3-hover-blue">
+        <td>Durability</td>
+        <td>3</td>
+        <td>PVC - AAAC (see below)</td>
+        <td>Datum</td>
 
-      <div class="w3-row-padding w3-center w3-section">
-        <div class="w3-col m3">
-          <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
-        </div>
+      </tr>
+      <tr class="w3-hover-blue">
+        <td>Usabiltiy</td>
+        <td>4</td>
+        <td>14.2 hours/annum</td>
+        <td>Datum</td>
 
-        <div class="w3-col m3">
-          <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
-        </div>
+      </tr>
+      <tr class="w3-hover-blue">
+        <td>Environmentally Friendly</td>
+        <td>2</td>
+        <td>&lt;1% of PVC is recycled - production releases harmful toxins (diatoxin)</td>
+        <td>Datum</td>
 
-        <div class="w3-col m3">
-          <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
-        </div>
+      </tr>
+      </table>
 
-        <div class="w3-col m3">
-          <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-        </div>
-        <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
-      </div>
-    </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="portfolio"style="margin-left:20%">
+
+     <h3 class="w3-center">Basic Principles of Water and Soil</h3>
+     <div class="w3-row">
+         <div class="w3-col m6 w3-center w3-padding-large">
+             <img src="../Images/SoilParticlePic.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="300px" height="400px">
+                 </div>
+         <p>Soil is made up of lots of different particles with pores between them. When water is added it fills the pores between the particles, which saturates the soil. Eventually, the gravitational water flows downwards, leaving air gaps and only the capillary and hygroscopic water in the pores. The space between particles act as capillary tubes, holding the capillary water in place using the attraction and hydrogen bonds between the soil and water. As the water content in the soil reduces, the radius of the menius reduces and the capillary water is held in greater tension.
+         </p>
+
+         <ul style="list-style-type:disc">
+             <li><b>Saturated</b> - pores are completely full of water</li>
+             <li><b>Unsaturated</b> - pores contain both water and air</li>
+        </ul>
+
+        <p>Plants require an air supply at their roots, so need to be surrounded by unsaturated soil. Unsaturated soil can exist at many different moisture content levels, but plants require the moisture to be between wilting and field capacity:
+
+         <ul style="list-style-type:disc">
+             <li><b>Wilting Capacity</b> - the moisture content where plants can no longer take up any of the water</li>
+             <li><b>Field Capacity</b> - the moisture content of the soil once gravitational water has flown away</li>
+        </ul>
+</div>
+
+<div>
+     <h3 class="w3-center">The Wetting Front</h3>
+     <p>After irrigation water infiltrates in an outward sphere through the surrounding soil, creating a moving boundary between wet and dry soil. This boundary is the wetting front. It moves downwards due to the motion lowering the gravitational potential energy of the water and it moves horizontally due to capillary action by the surrounding dry soil; water always flows to a lower pressure head. So the position of the wetting front depends on:
+     <ul style="list-style-type:disc">
+         <li>Amount of water added</li>
+         <li>Soil Composition (grain size/pore size)</li>
+         <li>Factors removing water (plant roots and evaporation)</li>
+    </ul>
+     <p><b><em>Why do we care about the position of the wetting front?</em></b></p>
+     Ideally, farmers want the wetting front to cover roughly 2/3 of the active root zone, as this ensure that the plants can take up the optimum amount of water needed. If the wetting front is:
+     <ul style="list-style-type:disc">
+         <li><b>Too Shallow</b> - the roots won't be properly covered so the crops won't receive enough water</li>
+         <li><b>Too Deep</b> - when the wetting front goes beyond the active root zone water is being wasted and the water is likely to wash away the key soil nutrients, which reduces the crop yield</li>
+    </ul>
+     <p>So by allowing farmers to locate the depth of the wetting front they are able to irrigate appropriately, which enables optimum water usage and maximises crop yield.</p>
+</div>
+
+<div>
+    <h3 class="w3-center">Ideal Wetting Front Depth</h3>
+    <p>The ideal depth depends on the root distribution of each individual crop. Roots aren't distributed uniformly downwards; the majority of the root mass is accumulated much higher than the maximum root depth. This means that to cover 2/3 of the active root zone the wetting front doesn't need to go down anywhere near the maximum root depth. The most common cash crops grown in Ethiopia and their ideal wetting front have been found:
+    </p>
+
+    <table class="w3-table-all w3-hoverable">
+        <tr class="w3-hover-blue">
+            <th>Crop</th>
+            <th>Depth of 50% Root Mass /cm</th>
+            <th>Depth of 95% Root Mass /cm</th>
+            <th>Ideal Wetting Front Depth /cm</th>
+        </tr>
+        <tr class="w3-hover-blue">
+            <td>Wheat</td>
+            <td>16.8</td>
+            <td>103.8</td>
+            <td>25</td>
+
+        </tr>
+        <tr class="w3-hover-blue">
+            <td>Barley</td>
+            <td>11.5</td>
+            <td>99.6</td>
+            <td>22</td>
+
+        </tr>
+        <tr class="w3-hover-blue">
+            <td>Chickpea</td>
+            <td>17.4</td>
+            <td>84.8</td>
+            <td>30</td>
+
+        </tr>
+        <tr class="w3-hover-blue">
+            <td>Pulse Crops</td>
+            <td>15.3</td>
+            <td>83.6</td>
+            <td>28</td>
+
+        </tr>
+        <tr class="w3-hover-blue">
+            <td>Lentils</td>
+            <td>11.2</td>
+            <td>73.7</td>
+            <td>20</td>
+
+        </tr>
+        <tr class="w3-hover-blue">
+            <td>Peas</td>
+            <td>18.2</td>
+            <td>85.0</td>
+            <td>29</td>
+
+        </tr>
+        <tr class="w3-hover-blue">
+            <td>Oilseed Crops</td>
+            <td>9.4</td>
+            <td>106.3</td>
+            <td>20</td>
+
+        </tr>
+    </table>
+
+</div>
+</div>
 
     <!-- Modal for full size images on click-->
     <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
@@ -209,13 +345,8 @@
       </div>
     </div>
 
-    <!-- Third Parallax Image with Portfolio Text -->
-    <div class="bgimg-3 w3-display-container w3-opacity-min">
-      <div class="w3-display-middle">
-         <span class="w3-xxlarge w3-text-white w3-wide">Depths of plant roots</span>
-      </div>
-    </div>
 
+</div>
 
 
     <!-- Add Google Maps -->
