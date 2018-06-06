@@ -64,7 +64,7 @@
     <body>
 
       <!-- Icon Bar (Sidebar - hidden on small screens) -->
-      <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="color: black">
+      <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="color: black; width: 15%; height:100%;">
         <!-- Avatar image in top left corner -->
         <img src="https://www.emma.cam.ac.uk/images/supporting/kabla1.jpg" style="width:100%">
         <a href="farm.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
@@ -82,9 +82,10 @@
             </button>
               <div class="dropdown-container">
                 <a href="electrical.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Product Overview</a>
-                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Specifications</a>
+                <a href="tech_specs" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Technical Specifications</a>
+                <a href="manufacturing.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Manufacturing</a>
                 <a href="how_to_use.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">How to Use</a>
-                <a href="electricalteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The electrical team</a>
+                <a href="electricalteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The Electrical Team</a>
 
               </div>
 
@@ -98,14 +99,14 @@
               <a href="mech_touchy_bottle.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Touchy Bottle</a>
               <a href="mech_core_sampler.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Soil Core Sampler</a>
               <a href="mech_wetting.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Bouyant wetting front detector</a>
-              <a href="mechteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The mechanical team</a>
+              <a href="mechteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The Mechanical team</a>
 
             </div>
         </a>
 
-        <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-          <i class="fa fa-envelope w3-large"></i>
-          <p style="font-size:15px">CONTACT</p>
+        <a href="comparison.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+          <i class="fa fa-balance-scale w3-large"></i>
+          <p style="font-size:15px">COMPARISON</p>
         </a>
 
       </nav>
@@ -127,51 +128,130 @@
     </div> -->
 
     <!-- Container (About Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="about" style="margin-left:20%;">
+    <div class="w3-container w3-padding-64 w3-center" id="about" style="margin-left:20%; margin-right:15%;">
       <h3 class="w3-center">Design</h3>
       <p class="w3-center"><em>We want to revolutionise agriculture</em></p>
       <p>
         Wet soil conducts electricity considerably better  than dry soil.
         Through measurements of soil resistivity, the electrical wetting front detector therefore allows farmers to accurately and cheaply determine when their crops have been fully irrigated.
-        This <em> massively</em> reduces wastage of vital water resources.
+        This <em> massively</em> reduces wastage of vital water resources and also increases crop yeilds.
   </p>
   <p class="w3-center" style="font-weight:bold;">The detector is split into two modules</p>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
       <p><b><i class="fa fa-bolt w3-margin-right"></i>The Sensor</b></p><br>
-      <p>The sensor rod contains the electrical probes necessary to distinguish dry soil from wet. The sensor consists of a PVC tube (durable, cheap and easy to source)
-        as well as 4 pairs of conductive, metal, flat rings. <br>
-        By sending a test voltage through each of the 4 sets of probes, and comparing the corrseponding outputs it is possible
+  <img src="/Images/electprotoarty_crop.jpg" style="width:100%; height:20%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Sensor Module">      <p>The sensor rod contains the electrical probes necessary to distinguish dry soil from wet. The sensor consists of a PVC tube (durable, cheap and easy to source)
+        as well as four pairs of conductive, metal, flat rings at each testing depth. <br>
+        By sending a test voltage through each of the four sets of probes, and comparing the corrseponding outputs it is possible
         to clearly determine the height of the wetting front to a high degree of accuracy.
       </p>
     </div>
     <div class="w3-col m6 l w3-padding-large">
       <p><b><i class="fa fa-bolt w3-margin-right"></i>The Reader</b></p><br>
+  <img src="/Images/reader.jpeg" style="margin-bottom:10.5%;margin-top:12.5%;width:100%; height:20%; transform: rotate(0.75turn);" onclick="onClick(this)" class="w3-hover-opacity" alt="Reader Device">
 
-      <p >Using just a small microprocessor and 4 LEDs, the reader simply and effectively communicates to the end user how deep in the soil the wetting front has reached.
+      <p >Using just a small microprocessor and four LEDs, the reader simply and effectively communicates to the end user how deep in the soil the wetting front has reached.
         The reader interfaces with the sensor rod with a 'tap on/ tap off' design, rendering the product easy to use and extremely robust.
 
 
       </p>
     </div>
   </div>
+
+
+    <img src="/Images/diagram.jpg" style="width:50%;height:60%"alt="Sketch">
+
 <p class="w3-content w3-center"> By keeping the design modular, the farmer is able to keep multiple sensors installed at various locations in his fields.
-It is then only necessary to have 1 reader which can be quickly moved across the field, taking readings at each of the sensor positions.
+It is then only necessary to have one reader which can be quickly moved across the field, taking readings at each of the sensor positions.</br>
+The modular design also protects the vulnerable electrical components in the reader device from exposure to the elements and can be stored safely within households.
 </p>
-
-  <p>
-The detector was created with the <a href="background.html#principles">UNICEF digital design principles</a> in mind. The interface and electronic components were kept incredibly simple, allowing for a robust and easy to use design.
-  </p>
+</div>
 
 
 
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">UNICEF Principles of Digital Design </span>
+  </div>
+</div>
+
+<div class="w3-container w3-padding-64" id="about" style="margin-left:20%; margin-right:15%;">
 
 
 
-      <h3 class="w3-padding-16 w3-text-grey w3-center">Rating against key specifications</h3>
-      <h5 class="w3-padding-16 w3-text-grey">Table Example</h5>
+  <h3 class="w3-padding-16 w3-text-grey w3-center">The detector was created with the <a href="background_unicef.html#principles">UNICEF digital design principles</a> in mind.   </p>
+</h3>
 
-      <table class="w3-table-all w3-hoverable">
+
+<ul style="list-style-type:circle">
+  <li class="w3-padding-small" style="font-weight:bold;">Working with the User</li>
+  <ul style="list-style-type:circle">
+    <li>The interface was kept as simple as possible (4 LEDs) for users with limited experience of electronics</li>
+    <li>Our solution minimises the amount of physical labour required from the farmer</li>
+    <li>Modular design to make replacement of electrical components as simple as possible</li>
+
+  </ul>
+  <li class="w3-padding-small" style="font-weight:bold;">Understand the existing ecosystem</li>
+  <ul style="list-style-type:circle">
+    <li>Agriculture accounts for 46.3 percent of the nation's Gross domestic Product (GDP), 83.9 percent of exports, and 80% of the labour force<a style="font-size:small;"href="https://www.state.gov/p/af/ci/et/">cite</a></li>
+    <li>The use of a wetting front detector has been shown to reduce water consumption in agriculture by approximately 50% (and increase yields)<a style="font-size:small;"href="http://www.iwmi.cgiar.org/2015/09/not-so-quiet-on-the-wetting-front/">cite</a></li>
+  </ul>
+  <li class="w3-padding-small" style="font-weight:bold;">Design for scale</li>
+  <ul style="list-style-type:circle">
+    <li>Modularity of the sensor and reader allows for multiple sensors to a single reader, covering a wide area</li>
+    <li>With the exception of the 3D printed parts (only used for prototyping purposes), the design is easily mass manufactured</li>
+  </ul>
+  <li class="w3-padding-small"style="font-weight:bold;">Build for Sustainability</li>
+  <ul style="list-style-type:circle">
+    <li>The reader uses very low power (assuming 10 minutes use every day, the batteries would last approximately 180 days)</li>
+    <li>Robust design of the pipe and sensors</li>
+  </ul>
+  <li class="w3-padding-small"style="font-weight:bold;">Be data driven</li>
+  <ul style="list-style-type:circle">
+    <li>Literature review in the brainstorming phase</li>
+    <li>Throughough testing of the prototype</li>
+
+  </ul>
+  <li class="w3-padding-small"style="font-weight:bold;">Use open standards, open data, open source and open innovation</li>
+  <ul style="list-style-type:circle">
+    <li><a href="manufacture.html">Manufacture</a> and <a href="how_to_use.html">user manual</a> specifications on this site</li>
+
+  </ul>
+  <li class="w3-padding-small"style="font-weight:bold;">Reuse and improve</li>
+  <ul style="list-style-type:circle">
+    <li>Built upon the full stop wetting front detector but changed the fundamental technology</li>
+    <li>Recycling of pipe material to manufacture the sensor rod</li>
+
+
+  </ul>
+  <li class="w3-padding-small"style="font-weight:bold;">Be collaborative</li>
+  <ul style="list-style-type:circle">
+    <li>Task sharing between electrical and mechanical approach teams</li>
+    <ul style="list-style-type:circle">
+      <li>Background research</li>
+      <li>Evaluation</li>
+      <li>Testing</li>
+      <li>Website</li>
+
+  </ul>
+  <li>Consultation with another academic team tackling this task in Ethiopia</li>
+
+</ul>
+
+</div>
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">RATING AGAINST KEY SPECIFICATIONS</span>
+  </div>
+</div>
+
+<div class="w3-container w3-padding-64" id="about" style="margin-left:20%; margin-right:15%;">
+
+  <h3 class="w3-padding-16 w3-text-grey w3-center" style="margin-bottom:10%;">Comparison against the Full Stop Wetting Front Detector (comparison against all alternatives <a href="comparison.html">here</a>)</h3>
+
+      <table class="w3-table-all w3-hoverable" >
       <tr class="w3-hover-blue">
         <th>Metric</th>
         <th>Weighting</th>
@@ -186,7 +266,7 @@ The detector was created with the <a href="background.html#principles">UNICEF di
         <td>10cm</td>
         <td>Datum</td>
         <td>1cm</td>
-        <td>+1</td>
+        <td>+2</td>
 
       </tr>
       <tr class="w3-hover-blue">
@@ -195,7 +275,7 @@ The detector was created with the <a href="background.html#principles">UNICEF di
         <td>£81.64 (+Import Tax)</td>
         <td>Datum</td>
         <td>£30 (Prototype)</td>
-        <td>+2</td>
+        <td>+1</td>
 
       </tr>
       <tr class="w3-hover-blue">
@@ -204,7 +284,7 @@ The detector was created with the <a href="background.html#principles">UNICEF di
         <td>Not manufacturable in Ethiopia</td>
         <td>Datum</td>
         <td>Some parts not locally available (electronics)</td>
-        <td>+1</td>
+        <td>0</td>
 
       </tr>
       <tr class="w3-hover-blue">
@@ -224,7 +304,7 @@ The detector was created with the <a href="background.html#principles">UNICEF di
         <td>Scientist Gardner reviewed it positively</td>
         <td>Datum</td>
         <td>Very easy to use (see <a href="how_to_use.html">User Manual</a>). Simple LED user interface</td>
-        <td>0</td>
+        <td>+2</td>
 
 
 
@@ -243,58 +323,58 @@ The detector was created with the <a href="background.html#principles">UNICEF di
 
 
 
-      <h5 class="w3-padding-16 w3-text-grey">Bars Example</h5>
+      <h5 class="w3-padding-16 w3-text-grey"></h5>
       <div class="w3-white w3-center">
         <div class="w3-dark-grey w3-center" style="margin-left:30%;height:20px;width:40%; margin-bottom: 5px; color: grey;"> Full Stop</div>
         <div class="w3-center" style="margin-left:30%;height:20px;width:40%;margin-bottom: 5px; background-color:DodgerBlue; color: white;">Electrical Detector</div>
-        <div class="w3-center" style="margin-left:30%;height:20px;width:40%;margin-bottom: 5px; background-color:SlateBlue;color: white;">Core Sampler</div>
+        <!-- <div class="w3-center" style="margin-left:30%;height:20px;width:40%;margin-bottom: 5px; background-color:SlateBlue;color: white;">Core Sampler</div>
         <div class="w3-center" style="margin-left:30%;height:20px;width:40%;margin-bottom: 5px;background-color:MediumSeaGreen;color: white">Fake Stop</div>
-        <div class="w3-center" style="margin-left:30%;height:20px;width:40%;margin-bottom: 5px;background-color:Violet;color: white;">Touchy Bottle</div>
+        <div class="w3-center" style="margin-left:30%;height:20px;width:40%;margin-bottom: 5px;background-color:Violet;color: white;">Touchy Bottle</div> -->
 
       </div>
       <p class="w3-xlarge w3-center">Accuracy</p>
       <div class="w3-white">
         <div class="w3-dark-grey w3-center" style="margin-left:45%;height:20px;width:10%; margin-bottom: 5px; color: grey;"> Datum</div>
         <div class="w3-center" style="margin-left:50%;height:20px;width:25%;margin-bottom: 5px; background-color:DodgerBlue; color: white;">+2</div>
-        <div class="w3-center" style="margin-left:25%;height:20px;width:25%;margin-bottom: 5px; background-color:SlateBlue;color: white;">-2</div>
+        <!-- <div class="w3-center" style="margin-left:25%;height:20px;width:25%;margin-bottom: 5px; background-color:SlateBlue;color: white;">-2</div>
         <div class="w3-center" style="margin-left:45%;height:20px;width:10%;margin-bottom: 5px;background-color:MediumSeaGreen;color: white">Datum</div>
-        <div class="w3-center" style="margin-left:25%;height:20px;width:25%;margin-bottom: 5px;background-color:Violet;color: white;">-2</div>
+        <div class="w3-center" style="margin-left:25%;height:20px;width:25%;margin-bottom: 5px;background-color:Violet;color: white;">-2</div> -->
 
       </div>
       <p class="w3-xlarge w3-center">Cost</p>
       <div class="w3-white">
         <div class="w3-dark-grey w3-center" style="margin-left:45%;height:20px;width:10%; margin-bottom: 5px; color: grey;"> £60</div>
         <div class="w3-center" style="margin-left:50%;height:20px;width:20%;margin-bottom: 5px; background-color:DodgerBlue; color: white;">£30</div>
-        <div class="w3-center" style="margin-left:50%;height:20px;width:40%;margin-bottom: 5px; background-color:SlateBlue;color: white;">£7.36</div>
+        <!-- <div class="w3-center" style="margin-left:50%;height:20px;width:40%;margin-bottom: 5px; background-color:SlateBlue;color: white;">£7.36</div>
         <div class="w3-center" style="margin-left:50%;height:20px;width:30%;margin-bottom: 5px;background-color:MediumSeaGreen;color: white">TBC</div>
-        <div class="w3-center" style="margin-left:50%;height:20px;width:80%;margin-bottom: 5px;background-color:Violet;color: white;">Free</div>
+        <div class="w3-center" style="margin-left:50%;height:20px;width:80%;margin-bottom: 5px;background-color:Violet;color: white;">Free</div> -->
 
       </div>
       <p class="w3-xlarge w3-center">Locally Sourced Components</p>
       <div class="w3-white">
         <div class="w3-dark-grey w3-center" style="margin-left:45%;height:20px;width:10%; margin-bottom: 5px; color: grey;"> No</div>
         <div class="w3-center" style="margin-left:50%;height:20px;width:10%;margin-bottom: 5px; background-color:DodgerBlue; color: white;">Some</div>
-        <div class="w3-center" style="margin-left:50%;height:20px;width:50%;margin-bottom: 5px; background-color:SlateBlue;color: white;">Yes</div>
+        <!-- <div class="w3-center" style="margin-left:50%;height:20px;width:50%;margin-bottom: 5px; background-color:SlateBlue;color: white;">Yes</div>
         <div class="w3-center" style="margin-left:45%;height:20px;width:10%;margin-bottom: 5px;background-color:MediumSeaGreen;color: white">No</div>
-        <div class="w3-center" style="margin-left:50%;height:20px;width:50%;margin-bottom: 5px;background-color:Violet;color: white;">Yes</div>
+        <div class="w3-center" style="margin-left:50%;height:20px;width:50%;margin-bottom: 5px;background-color:Violet;color: white;">Yes</div> -->
 
       </div>
       <p class="w3-xlarge w3-center">Durability</p>
       <div class="w3-white">
         <div class="w3-dark-grey w3-center" style="margin-left:45%;height:20px;width:10%; margin-bottom: 5px; color: grey;">PVC- AAAC</div>
         <div class="w3-center" style="margin-left:30%;height:20px;width:20%;margin-bottom: 5px; background-color:DodgerBlue; color: white;">Vunerable wires</div>
-        <div class="w3-center" style="margin-left:35%;height:20px;width:15%;margin-bottom: 5px; background-color:SlateBlue;color: white;">ABCAA</div>
+        <!-- <div class="w3-center" style="margin-left:35%;height:20px;width:15%;margin-bottom: 5px; background-color:SlateBlue;color: white;">ABCAA</div>
         <div class="w3-center" style="margin-left:45%;height:20px;width:10%;margin-bottom: 5px;background-color:MediumSeaGreen;color: white">PVC- AAAC</div>
-        <div class="w3-center" style="margin-left:20%;height:20px;width:30%;margin-bottom: 5px;background-color:Violet;color: white;">Plastic Bottle</div>
+        <div class="w3-center" style="margin-left:20%;height:20px;width:30%;margin-bottom: 5px;background-color:Violet;color: white;">Plastic Bottle</div> -->
 
       </div>
       <p class="w3-xlarge w3-center">Usability</p>
       <div class="w3-white">
         <div class="w3-dark-grey w3-center" style="margin-left:45%;height:20px;width:10%; margin-bottom: 5px; color: grey;"> Datum</div>
         <div class="w3-center" style="margin-left:50%;height:20px;width:30%;margin-bottom: 5px; background-color:DodgerBlue; color: white;">+2</div>
-        <div class="w3-center" style="margin-left:50%;height:20px;width:15%;margin-bottom: 5px; background-color:SlateBlue;color: white;">+1</div>
-        <div class="w3-center" style="margin-left:45%;height:20px;width:10%;margin-bottom: 5px;background-color:MediumSeaGreen;color: white">Datum</div>
-        <div class="w3-center" style="margin-left:35%;height:20px;width:15%;margin-bottom: 5px;background-color:Violet;color: white;">-1</div>
+        <!-- <div class="w3-center" style="margin-left:50%;height:20px;width:15%;margin-bottom: 5px; background-color:SlateBlue;color: white;">+1</div>
+        <div class="w3-center" style="margin-left:50%;height:20px;width:15%;margin-bottom: 5px;background-color:MediumSeaGreen;color: white">+1</div>
+        <div class="w3-center" style="margin-left:35%;height:20px;width:15%;margin-bottom: 5px;background-color:Violet;color: white;">-1</div> -->
 
       </div>
       <p class="w3-xlarge w3-center">Eco-Friendly</p>
@@ -302,127 +382,15 @@ The detector was created with the <a href="background.html#principles">UNICEF di
       <div class="w3-white">
         <div class="w3-dark-grey w3-center" style="margin-left:45%;height:20px;width:10%; margin-bottom: 5px; color: grey;">Datum </div>
         <div class="w3-center" style="margin-left:35%;height:20px;width:15%;margin-bottom: 5px; background-color:DodgerBlue; color: white;">-1</div>
-        <div class="w3-center" style="margin-left:50%;height:20px;width:15%;margin-bottom: 5px; background-color:SlateBlue;color: white;">+1</div>
+        <!-- <div class="w3-center" style="margin-left:50%;height:20px;width:15%;margin-bottom: 5px; background-color:SlateBlue;color: white;">+1</div>
         <div class="w3-center" style="margin-left:45%;height:20px;width:10%;margin-bottom: 5px;background-color:MediumSeaGreen;color: white">Datum</div>
         <div class="w3-center" style="margin-left:50%;height:20px;width:15%;margin-bottom: 5px;background-color:Violet;color: white;">+1</div>
+        -->
+    </div>
 
-      </div>
 
-      <br>
-
-      <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey w3-hover-grey">
-        <div class="w3-quarter w3-section ">
-          <span class="w3-xlarge">&lt £30 </span><br>
-          Cost of Protoype
-        </div>
-        <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">3+</span><br>
-          Years of Use
-        </div>
-        <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">1 Billion People</span><br>
-          Potential impact
-        </div>
-        <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">4 weeks</span><br>
-          World class research and development
-        </div>
-      </div>
 </div>
 </div>
-    <!-- Second Parallax Image with Portfolio Text -->
-    <div class="bgimg-2 w3-display-container w3-opacity-min">
-      <div class="w3-display-middle">
-        <span class="w3-xxlarge w3-text-white w3-wide">TECHNOLOGY</span>
-      </div>
-    </div>
-
-    <!-- Container (Portfolio Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="portfolio">
-      <h3 class="w3-center">ROBUST & EASY TO USE CIRCUITRY</h3>
-      <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
-
-      <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-      <div class="w3-row-padding w3-center">
-        <div class="w3-col m3">
-          <img src="/Images/circuit.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
-        </div>
-
-        <div class="w3-col m3">
-          <img src="/Images/circuit.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
-        </div>
-
-        <div class="w3-col m3">
-          <img src="/Images/electarty2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-        </div>
-
-        <div class="w3-col m3">
-          <img src="/Images/electarty2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-        </div>
-      </div>
-
-      <div class="w3-row-padding w3-center w3-section">
-        <div class="w3-col m3">
-          <img src="/Images/electarty2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
-        </div>
-
-        <div class="w3-col m3">
-          <img src="/Images/electarty2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
-        </div>
-
-        <div class="w3-col m3">
-          <img src="/Images/electarty2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
-        </div>
-
-        <div class="w3-col m3">
-          <img src="/Images/electarty2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-        </div>
-        <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
-      </div>
-    </div>
-
-    <!-- Modal for full size images on click-->
-    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-      <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-        <img id="img01" class="w3-image">
-        <p id="caption" class="w3-opacity w3-large"></p>
-      </div>
-    </div>
-
-    <!-- Third Parallax Image with Portfolio Text -->
-    <div class="bgimg-3 w3-display-container w3-opacity-min">
-      <div class="w3-display-middle">
-         <span class="w3-xxlarge w3-text-white w3-wide" style="text-align: center">MECHANICAL DESIGN</span>
-      </div>
-    </div>
-
-
-    <!-- Portfolio Section -->
-    <div class="w3-padding-64 w3-content" id="photos">
-      <h2 class="w3-text-grey">More photos</h2>
-      <hr style="width:200px" class="w3-opacity">
-
-      <!-- Grid for photos -->
-      <div class="w3-row-padding" style="margin:0 -16px">
-        <div class="w3-half">
-
-
-          <img src="/Images/prototybetopview.jpg" style="width:100%">
-          <img src="/Images/endelec.jpg" style="width:100%">
-        </div>
-
-        <div class="w3-half">
-          <img src="/Images/endelect(2).jpg" style="width:100%">
-          <img src="/Images/electarty2.jpg" style="width:100%">
-          <img src="/Images/electprotoarty.jpg" style="width:100%">
-          <img src="/Images/endelec3.jpg" style="width:100%">
-        </div>
-      <!-- End photo grid -->
-      </div>
-    <!-- End Portfolio Section -->
-    </div>
-
 
 
     <script>
