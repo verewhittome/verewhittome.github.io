@@ -70,7 +70,7 @@
     <body>
 
       <!-- Icon Bar (Sidebar - hidden on small screens) -->
-      <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="color: black; width: 15%; height:100%;">
+      <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="color: black">
         <!-- Avatar image in top left corner -->
         <img src="https://www.emma.cam.ac.uk/images/supporting/kabla1.jpg" style="width:100%">
         <a href="farm.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
@@ -88,10 +88,9 @@
             </button>
               <div class="dropdown-container">
                 <a href="electrical.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Product Overview</a>
-                <a href="tech_specs" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Technical Specifications</a>
-                <a href="manufacturing.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Manufacturing</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Specifications</a>
                 <a href="how_to_use.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">How to Use</a>
-                <a href="electricalteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The Electrical Team</a>
+                <a href="electricalteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The electrical team</a>
 
               </div>
 
@@ -105,14 +104,14 @@
               <a href="mech_touchy_bottle.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Touchy Bottle</a>
               <a href="mech_core_sampler.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Soil Core Sampler</a>
               <a href="mech_wetting.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Bouyant wetting front detector</a>
-              <a href="mechteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The Mechanical team</a>
+              <a href="mechteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The mechanical team</a>
 
             </div>
         </a>
 
-        <a href="comparison.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-          <i class="fa fa-balance-scale w3-large"></i>
-          <p style="font-size:15px">COMPARISON</p>
+        <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+          <i class="fa fa-envelope w3-large"></i>
+          <p style="font-size:15px">CONTACT</p>
         </a>
 
       </nav>
@@ -136,24 +135,23 @@
     <!-- Container (About Section) -->
     <div class="w3-content w3-container w3-padding-64" id="about" style="margin-left:20%;">
       <h3 class="w3-center">MANUFACTURING GUIDE</h3>
-      <p>Welcome to the manufacturing guide! This page contains all the neccesery steps to build your very own <strong>wetting front detector</strong>! Building the <strong>wetting front detector</strong> has three main steps:</p>
+      <p>Welcome to the manufacturing guide! This page contains all the neccesery steps to build your very own <strong>wetting front detector!</strong> Building the <strong>wetting front detector</strong> has three main steps:</p>
       <ul style="list-style-type:circle">
         <li class="w3-padding-small">Understanding the how the circuitry works and programming the Blue Pill microcontroller.</li>
         <li class="w3-padding-small">Constructing the reader module</li>
         <li class="w3-padding-small">Constructing the sensor module</li>
       </ul>
 
-      <p>Click on the buttons below to skip to a section.(can we make them buttons?)</p>
-      <h4 class="w3-center">Circuitry and Programming</h4>
-      <h4 class="w3-center">Reader Construction</h4>
-      <h4 class="w3-center">Sensor Construction</h4>
+      <h4 class="w3-center"><a href="#circuitry">Circuitry and Programming</a></h4>
+      <h4 class="w3-center"><a href="#reader">Reader Construction</a></h4>
+      <h4 class="w3-center"><a href="#sensor">Sensor Construction</a></h4>
 
     </div>
 
  <!-- second Parallax Image with Porfolio Text-->
  <div class="bgimg-4 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">CIRCUITRY AND PROGRAMMING</span>
+    <span id= "circuitry" class="w3-xxlarge w3-text-white w3-wide">CIRCUITRY AND PROGRAMMING</span>
   </div>
 </div>
 
@@ -206,17 +204,19 @@
     <li class="w3-padding-small">Insert the code used for the <strong>electrical wetting front detector</strong> (attached at the end of this section) on the IDE text editor. Compile and upload the code onto the Blue Pill.</li>
   </ul>
 
-  <h2 class="w3-center w3-padding-small">DESIGN FILES</h2>
-  <button class="btn" style=" background-color: DodgerBlue;border: none; color: white; padding: 12px 30px; font-size: 16px;  cursor: pointer; font-size: 20px;"><a href="/Downloads/"><i class="fa fa-download" ></i> KiCad Files</a></button>
-  <button class="btn" style="background-color: MediumSeaGreen;border: none; color: white; padding: 12px 30px; font-size: 16px;  cursor: pointer; font-size: 20px;"><a href="/Downloads/"><i class="fa fa-download" ></i> Arduino Files</a></button>
+  <h2 class="w3-center w3-padding-small" style="margin-bottom:10%; margin-top:10%">DESIGN FILES</h2>
+  <div  style="margin-left:30%">
 
+  <button class="btn" style=" background-color: DodgerBlue;border: none; color: white; padding: 12px 30px; font-size: 16px;  cursor: pointer; font-size: 20px;"><a href="/Downloads/Kicad.zip"><i class="fa fa-download" ></i> KiCad Files</a></button>
+  <button class="btn" style="background-color: MediumSeaGreen;border: none; color: white; padding: 12px 30px; font-size: 16px;  cursor: pointer; font-size: 20px;"><a href="Downloads/Cad.zip"><i class="fa fa-download" ></i> Arduino Files</a></button>
+</div>
 </div>
 
 
 <!-- third Parallax Image with Porfolio Text-->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">READER CONSTRUCTION</span>
+    <span id="reader"class="w3-xxlarge w3-text-white w3-wide">READER CONSTRUCTION</span>
   </div>
 </div>
 
@@ -225,19 +225,19 @@
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
     <div class=" w3-center">
         <div class="w3-col m3">
-          <img src="../Images/electrical_manufacturing_16.JPEG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+          <img src="../Images/electrical_manufacturing_16.JPEG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
         </div>
 
         <div class="w3-col m3">
-          <img src="../Images/electrical_manufacturing_17.JPEG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+          <img src="../Images/electrical_manufacturing_17.JPEG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" >
         </div>
 
         <div class="w3-col m3">
-          <img src="../Images/electrical_manufacturing_21.JPEG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+          <img src="../Images/electrical_manufacturing_21.JPEG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" >
         </div>
 
         <div class="w3-col m3">
-          <img src="../Images/electrical_manufacturing_22.JPEG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+          <img src="../Images/electrical_manufacturing_22.JPEG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
         </div>
     </div>
 
@@ -351,6 +351,7 @@
     </ul>
 
     <h2 class="w3-center">DESIGN FILES</h2>
+    <a href="/Downloads/Kicad.zip">Kicad</a>
     <p>* CAD files for box*</p>
     <p>* kiCAD files for PCB*</p>
     <p>* CAD file for cap*</p>
@@ -360,14 +361,14 @@
     <!-- forth Parallax Image with Portfolio Text -->
     <div class="bgimg-2 w3-display-container w3-opacity-min">
       <div class="w3-display-middle">
-        <span class="w3-xxlarge w3-text-white w3-wide">SENSOR CONSTRUCTION</span>
+        <span id="sensor" class="w3-xxlarge w3-text-white w3-wide">SENSOR CONSTRUCTION</span>
       </div>
     </div>
 
     <div class="w3-content w3-container w3-padding-64" id="portfolio">
 
       <div class=" w3-center w3-padding-large">
-        <img src="../Images/electrical_manufacturing_1.png" alt="Photo of Me" width="500px">
+        <img src="../Images/electrical_manufacturing_1.png" alt="Manufacturing" width="500px">
       </div>
 
       <h2 class="w3-center">PARTS LIST</h2>
