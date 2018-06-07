@@ -75,17 +75,24 @@
     <body>
 
       <!-- Icon Bar (Sidebar - hidden on small screens) -->
-      <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="color: black">
+      <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="color: black; width: 15%; height:100%;">
         <!-- Avatar image in top left corner -->
         <img src="https://www.emma.cam.ac.uk/images/supporting/kabla1.jpg" style="width:100%">
         <a href="farm.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
           <i class="fa fa-home w3-large"></i>
           <p style="font-size:15px">HOME</p>
         </a>
-        <a href="background.html" class="w3-bar-item w3-button w3-padding-large w3-black">
-          <i class="fa fa-tint w3-large"></i>
-          <p style="font-size:15px">BACKGROUND</p>
-    </a>
+        <button class="dropdown-btn w3-bar-item w3-button w3-black w3-padding-large">
+          <i class="fa fa-bolt w3-large"></i> <br/>
+           BACKGROUND
+          <i class="fa fa-caret-down"></i>
+          </button>
+            <div class="dropdown-container">
+              <a href="background.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Problem Statment</a>
+              <a href="background_unicef.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Unicef Principles of Digital Design</a>
+
+
+            </div>
           <button class="dropdown-btn w3-bar-item w3-button w3-hover-black w3-padding-large">
             <i class="fa fa-bolt w3-large"></i> <br/>
              ELECTRICAL MOISTURE
@@ -93,9 +100,11 @@
             </button>
               <div class="dropdown-container">
                 <a href="electrical.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Product Overview</a>
-                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Specifications</a>
-                <a href="" class="w3-bar-item w3-button w3-padding-large w3-hover-black">How to Use</a>
-                <a href="electricalteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The electrical team</a>
+                <a href="manufacturing.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Manufacturing</a>
+                <a href="how_to_use.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">How to Use</a>
+                <a href="deployment_strategy.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Deployment Strategy</a>
+                <a href="test_methodology.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Testing</a>
+                <a href="electricalteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The Electrical Team</a>
 
               </div>
 
@@ -109,17 +118,18 @@
               <a href="mech_touchy_bottle.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Touchy Bottle</a>
               <a href="mech_core_sampler.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Soil Core Sampler</a>
               <a href="mech_wetting.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Bouyant wetting front detector</a>
-              <a href="mechteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The mechanical team</a>
+              <a href="mechteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The Mechanical team</a>
 
             </div>
         </a>
 
-        <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-          <i class="fa fa-envelope w3-large"></i>
-          <p style="font-size:15px">CONTACT</p>
+        <a href="comparison.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+          <i class="fa fa-balance-scale w3-large"></i>
+          <p style="font-size:15px">COMPARISON</p>
         </a>
 
       </nav>
+
 
     <!-- First Parallax Image with Logo Text -->
 
@@ -137,12 +147,12 @@
     </div> -->
 
     <!-- Container (About Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="about" >
-      <h2 class="w3-center">The Problem Statement</h3>
+    <div class="w3-content w3-container w3-padding-64" id="about" style="margin-left:20%;">
+      <h2 class="w3-center">The Problem Statement</h2>
 
       <p class="w3-center"><em>Optimise water usage in Ethiopian agriculture</em></p>
 
-     <h4 class="w3-center">An Engineering Approach</h3>
+     <h4 class="w3-center">An Engineering Approach</h4>
 
 
      <ul style="list-style-type:circle">
@@ -151,217 +161,7 @@
        <li class="w3-padding-small">Keep costs lower than $30 to remain affordable for Ethiopian farmers (current solution “fullstop” is at least $60)</li>
      </ul>
 </div>
-    
-    <div style = "margin-left:15%">
-        <h3 class="w3-center">Basic Principles of Water and Soil</h3>
-        <div class="w3-row">
-            <div class="w3-col m4 w3-center w3-padding-large">
-                <img src="../Images/SoilParticlePic.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="300px" height="400px">
-                    </div>
-            <p>Soil is made up of lots of different particles with pores between them. When water is added it fills the pores between the particles, which saturates the soil. Eventually, the gravitational water flows downwards, leaving air gaps and only the capillary and hygroscopic water in the pores. The space between particles act as capillary tubes, holding the capillary water in place using the attraction and hydrogen bonds between the soil and water. As the water content in the soil reduces, the radius of the menius reduces and the capillary water is held in greater tension.
-            </p>
-            
-            <ul style="list-style-type:disc">
-                <li><b>Saturated</b> - pores are completely full of water</li>
-                <li><b>Unsaturated</b> - pores contain both water and air</li>
-            </ul>
-            
-            <p><br>Plants require an air supply at their roots, so need to be surrounded by unsaturated soil. Unsaturated soil can exist at many different moisture content levels, but plants require the moisture to be between wilting and field capacity:
-            
-            <ul style="list-style-type:disc">
-                <li><b>Wilting Capacity</b> - the moisture content where plants can no longer take up any of the water</li>
-                <li><b>Field Capacity</b> - the moisture content of the soil once gravitational water has flown away</li>
-            </ul>
-        </div>
-        <p><br></p>
-        <div>
-            <h3 class="w3-center">The Wetting Front</h3>
-            <p>After irrigation water infiltrates in an outward sphere through the surrounding soil, creating a moving boundary between wet and dry soil. This boundary is the wetting front. It moves downwards due to the motion lowering the gravitational potential energy of the water and it moves horizontally due to capillary action by the surrounding dry soil; water always flows to a lower pressure head. So the position of the wetting front depends on:</p>
-            <ul style="list-style-type:disc">
-                <li>Amount of water added</li>
-                <li>Soil Composition (grain size/pore size)</li>
-                <li>Factors removing water (plant roots and evaporation)</li>
-            </ul>
-            <p><br></p>
-            
-            <h3 class="w3-center">Locating the Wetting Front - The Solution</h3>
-            <p>Ideally, farmers want the wetting front to cover roughly 2/3 of the active root zone, as this ensure that the plants can take up the optimum amount of water needed. If the wetting front is:
-            <ul style="list-style-type:disc">
-                <li><b>Too Shallow</b> - the roots won't be properly covered so the crops won't receive enough water</li>
-                <li><b>Too Deep</b> - when the wetting front goes beyond the active root zone water is being wasted and the water is likely to wash away the key soil nutrients, which reduces the crop yield</li>
-            </ul>
-            <p>So by allowing farmers to locate the depth of the wetting front they are able to irrigate appropriately, which enables optimum water usage and maximises crop yield.</p>
-        </div>
-        <p><br></p>
-        <div>
-            <h3 class="w3-center">Ideal Wetting Front Depth</h3>
-            <p>The ideal depth depends on the root distribution of each individual crop. Roots aren't distributed uniformly downwards; the majority of the root mass is accumulated much higher than the maximum root depth. This means that to cover 2/3 of the active root zone the wetting front doesn't need to go down anywhere near the maximum root depth. The most common cash crops grown in Ethiopia and their ideal wetting front have been found:
-            </p>
-            
-            <table class="w3-table-all w3-hoverable">
-                <tr class="w3-hover-blue">
-                    <th>Crop</th>
-                    <th>Depth of 50% Root Mass /cm</th>
-                    <th>Depth of 95% Root Mass /cm</th>
-                    <th>Ideal Wetting Front Depth /cm</th>
-                </tr>
-                <tr class="w3-hover-blue">
-                    <td>Wheat</td>
-                    <td>16.8</td>
-                    <td>103.8</td>
-                    <td>25</td>
-                    
-                </tr>
-                <tr class="w3-hover-blue">
-                    <td>Barley</td>
-                    <td>11.5</td>
-                    <td>99.6</td>
-                    <td>22</td>
-                    
-                </tr>
-                <tr class="w3-hover-blue">
-                    <td>Chickpea</td>
-                    <td>17.4</td>
-                    <td>84.8</td>
-                    <td>30</td>
-                    
-                </tr>
-                <tr class="w3-hover-blue">
-                    <td>Pulse Crops</td>
-                    <td>15.3</td>
-                    <td>83.6</td>
-                    <td>28</td>
-                    
-                </tr>
-                <tr class="w3-hover-blue">
-                    <td>Lentils</td>
-                    <td>11.2</td>
-                    <td>73.7</td>
-                    <td>20</td>
-                    
-                </tr>
-                <tr class="w3-hover-blue">
-                    <td>Peas</td>
-                    <td>18.2</td>
-                    <td>85.0</td>
-                    <td>29</td>
-                    
-                </tr>
-                <tr class="w3-hover-blue">
-                    <td>Oilseed Crops</td>
-                    <td>9.4</td>
-                    <td>106.3</td>
-                    <td>20</td>
-                    
-                </tr>
-            </table>
-            <p>Information about the major cash crops in Ethiopia found <a href="https://en.wikipedia.org/wiki/Agriculture_in_Ethiopia">here</a> and rooting depths from: </p>
-            <p>Nielsen, D. R. (1958). Movement of water in unsaturated soils as related to soil physical properties. </p>
-            
-        </div>
-    
-    
-     <!-- Second Parallax Image with Portfolio Text -->
-     <div class="bgimg-2 w3-display-container w3-opacity-min">
-       <div class="w3-display-middle"style="margin-left:8%">
-         <span class="w3-xxlarge w3-text-white w3-wide" >Key Principles of Digital Design</span>
-       </div>
-     </div>
 
-     <div class="w3-content w3-container w3-padding-64" id="principles">
-
-     <div class="principle">
-     			  <a class="principle__icon-link" href="https://digitalprinciples.org/principle/design-with-the-user/">
-     			    <div class="principle__icon" style="background-image: url(https://digitalprinciples.org/wp-content/uploads/2017/04/Icon_DesignWithUser.svg);"></div>
-     			  </a>
-     			  <div class="principle__content">
-     			    <h2 class="principle__title"><a href="https://digitalprinciples.org/principle/design-with-the-user/">Design With the User</a></h2>
-     			    <div class="principle__text">User-centered design starts with getting to know the people you are designing for through conversation, observation and co-creation. </div>
-     			    <div class="principle__learn-more"><a href="https://digitalprinciples.org/principle/design-with-the-user/">Learn more</a></div>
-     			  </div>
-     			</div>
-     						<div class="principle">
-     			  <a class="principle__icon-link" href="https://digitalprinciples.org/principle/understand-the-existing-ecosystem/">
-     			    <div class="principle__icon" style="background-image: url(https://digitalprinciples.org/wp-content/uploads/2017/04/Icon_UnderstandExistingEcosystem.svg);"></div>
-     			  </a>
-     			  <div class="principle__content">
-     			    <h2 class="principle__title"><a href="https://digitalprinciples.org/principle/understand-the-existing-ecosystem/">Understand the Existing Ecosystem</a></h2>
-     			    <div class="principle__text">Well-designed initiatives and digital tools consider the particular structures and needs that exist in each country, region and community.</div>
-     			    <div class="principle__learn-more"><a href="https://digitalprinciples.org/principle/understand-the-existing-ecosystem/">Learn more</a></div>
-     			  </div>
-     			</div>
-     						<div class="principle">
-     			  <a class="principle__icon-link" href="https://digitalprinciples.org/principle/design-for-scale/">
-     			    <div class="principle__icon" style="background-image: url(https://digitalprinciples.org/wp-content/uploads/2017/04/Icon_DesignForScale.svg);"></div>
-     			  </a>
-     			  <div class="principle__content">
-     			    <h2 class="principle__title"><a href="https://digitalprinciples.org/principle/design-for-scale/">Design for Scale</a></h2>
-     			    <div class="principle__text">Achieving scale requires adoption beyond an initiatives pilot population and often necessitates securing funding or partners that take the initiative to new communities or regions.</div>
-     			    <div class="principle__learn-more"><a href="https://digitalprinciples.org/principle/design-for-scale/">Learn more</a></div>
-     			  </div>
-     			</div>
-     						<div class="principle">
-     			  <a class="principle__icon-link" href="https://digitalprinciples.org/principle/build-for-sustainability/">
-     			    <div class="principle__icon" style="background-image: url(https://digitalprinciples.org/wp-content/uploads/2017/04/Icon_Sustainability.svg);"></div>
-     			  </a>
-     			  <div class="principle__content">
-     			    <h2 class="principle__title"><a href="https://digitalprinciples.org/principle/build-for-sustainability/">Build for Sustainability</a></h2>
-     			    <div class="principle__text">Building sustainable programs, platforms and digital tools is essential to maintain user and stakeholder support, as well as to maximize long-term impact.</div>
-     			    <div class="principle__learn-more"><a href="https://digitalprinciples.org/principle/build-for-sustainability/">Learn more</a></div>
-     			  </div>
-     			</div>
-     						<div class="principle">
-     			  <a class="principle__icon-link" href="https://digitalprinciples.org/principle/be-data-driven/">
-     			    <div class="principle__icon" style="background-image: url(https://digitalprinciples.org/wp-content/uploads/2017/04/Icon_DataDriven.svg);"></div>
-     			  </a>
-     			  <div class="principle__content">
-     			    <h2 class="principle__title"><a href="https://digitalprinciples.org/principle/be-data-driven/">Be Data Driven</a></h2>
-     			    <div class="principle__text">When an initiative is data driven, quality information is available to the right people when they need it, and they are using those data to take action.</div>
-     			    <div class="principle__learn-more"><a href="https://digitalprinciples.org/principle/be-data-driven/">Learn more</a></div>
-     			  </div>
-     			</div>
-     						<div class="principle">
-     			  <a class="principle__icon-link" href="https://digitalprinciples.org/principle/use-open-standards-open-data-open-source-and-open-innovation/">
-     			    <div class="principle__icon" style="background-image: url(https://digitalprinciples.org/wp-content/uploads/2017/04/Icon_OpenSource.svg);"></div>
-     			  </a>
-     			  <div class="principle__content">
-     			    <h2 class="principle__title"><a href="https://digitalprinciples.org/principle/use-open-standards-open-data-open-source-and-open-innovation/">Use Open Standards, Open Data, Open Source, and Open Innovation</a></h2>
-     			    <div class="principle__text">An open approach to digital development can help to increase collaboration in the digital development community and avoid duplicating work that has already been done.</div>
-     			    <div class="principle__learn-more"><a href="https://digitalprinciples.org/principle/use-open-standards-open-data-open-source-and-open-innovation/">Learn more</a></div>
-     			  </div>
-     			</div>
-     						<div class="principle">
-     			  <a class="principle__icon-link" href="https://digitalprinciples.org/principle/reuse-and-improve/">
-     			    <div class="principle__icon" style="background-image: url(https://digitalprinciples.org/wp-content/uploads/2017/04/Icon_ReuseImprove.svg);"></div>
-     			  </a>
-     			  <div class="principle__content">
-     			    <h2 class="principle__title"><a href="https://digitalprinciples.org/principle/reuse-and-improve/">Reuse and Improve</a></h2>
-     			    <div class="principle__text">Reusing and improving is about taking the work of the global development community further than any organization or program can do alone.</div>
-     			    <div class="principle__learn-more"><a href="https://digitalprinciples.org/principle/reuse-and-improve/">Learn more</a></div>
-     			  </div>
-     			</div>
-     						<div class="principle">
-     			  <a class="principle__icon-link" href="https://digitalprinciples.org/principle/address-privacy-security/">
-     			    <div class="principle__icon" style="background-image: url(https://digitalprinciples.org/wp-content/uploads/2017/04/Icon_PrivacySecurity.svg);"></div>
-     			  </a>
-     			  <div class="principle__content">
-     			    <h2 class="principle__title"><a href="https://digitalprinciples.org/principle/address-privacy-security/">Address Privacy &#038; Security</a></h2>
-     			    <div class="principle__text">Addressing privacy and security in digital development involves careful consideration of which data are collected and how data are acquired, used, stored and shared.</div>
-     			    <div class="principle__learn-more"><a href="https://digitalprinciples.org/principle/address-privacy-security/">Learn more</a></div>
-     			  </div>
-     			</div>
-     						<div class="principle">
-     			  <a class="principle__icon-link" href="https://digitalprinciples.org/principle/be-collaborative/">
-     			    <div class="principle__icon" style="background-image: url(https://digitalprinciples.org/wp-content/uploads/2017/04/Icon_Collaborative.svg);"></div>
-     			  </a>
-     			  <div class="principle__content">
-     			    <h2 class="principle__title"><a href="https://digitalprinciples.org/principle/be-collaborative/">Be Collaborative</a></h2>
-     			    <div class="principle__text">Being collaborative means sharing information, insights, strategies and resources across projects, organizations and sectors, leading to increased efficiency and impact.</div>
-     			    <div class="principle__learn-more"><a href="https://digitalprinciples.org/principle/be-collaborative/">Learn more</a></div>
-     			  </div>
-     			</div>
-
-</div>
 
 
           <!-- Third Parallax Image with Portfolio Text -->
@@ -372,7 +172,7 @@
           </div>
 
 
-          <div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <div class="w3-content w3-container w3-padding-64" id="portfolio"style="margin-left:20%">
 
 
     <!-- Container (Portfolio Section) -->
@@ -389,7 +189,7 @@
       <tr class="w3-hover-blue">
         <td>Accuracy</td>
         <td>3</td>
-        <td>10 cm</td>
+        <td>10cm</td>
         <td>Datum</td>
 
       </tr>
@@ -429,22 +229,114 @@
 
       </tr>
       </table>
-      
-      <p> <br>
-      Each concept will be evaluated by each of these key design metrics, with the weightings indicating the importance of the criteria (on a scale of 1 to 5 with increasing importance). The performance each concept will be compare to the FullStop detector's performance, giving a comparative score between +2 and -2. +2 = much better than the datum, +1 = better than the datum, 0 = equal to the datum, -1 = worse than the datum, -2 = much worse than the datum. Then the comparison score is scaled by it's metric's weighting and each value is summed up to give a quantitative evaluation of each concept.</p>
-      <p><br>Each design metric will be assessed in the following way:
-      <ul style="list-style-type:disc">
-          <li><b>Accuracy</b> - how far the wetting front moves beyond the device before detection</li>
-          <li><b>Price</b> - material cost and estimated labour cost</li>
-          <li><b>Locally Produced</b> - percentage of the raw materials and product manufacturing done in Ethiopia</li>
-          <li><b>Durability</b> - assessed on flammability, fresh water resistance, salt water resistance, UV (sunlight resistance) and wear resistance. These are all taken from the <a href="http://www-mdp.eng.cam.ac.uk/web/library/enginfo/cueddatabooks/materials.pdf">CUED materials data book</a></li>
-          <li><b>Time per Measurement</b> - amount of time spent using the device (assembly/installation and time spent taking each measurement/resetting)</li>
-          <li><b>Environmentally Friendly</b></li> - qualitative investigation into manufacture of the raw materials, their environment impact during use (i.e. do they leach into the surrounding soil) and their end of life/reuse</li>
-          </ul>
-</div>
-          
 
-     
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="portfolio"style="margin-left:20%">
+
+     <h3 class="w3-center">Basic Principles of Water and Soil</h3>
+     <div class="w3-row">
+         <div class="w3-col m6 w3-center w3-padding-large">
+             <img src="../Images/SoilParticlePic.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="300px" height="400px">
+                 </div>
+         <p>Soil is made up of lots of different particles with pores between them. When water is added it fills the pores between the particles, which saturates the soil. Eventually, the gravitational water flows downwards, leaving air gaps and only the capillary and hygroscopic water in the pores. The space between particles act as capillary tubes, holding the capillary water in place using the attraction and hydrogen bonds between the soil and water. As the water content in the soil reduces, the radius of the menius reduces and the capillary water is held in greater tension.
+         </p>
+
+         <ul style="list-style-type:disc">
+             <li><b>Saturated</b> - pores are completely full of water</li>
+             <li><b>Unsaturated</b> - pores contain both water and air</li>
+        </ul>
+
+        <p>Plants require an air supply at their roots, so need to be surrounded by unsaturated soil. Unsaturated soil can exist at many different moisture content levels, but plants require the moisture to be between wilting and field capacity:
+
+         <ul style="list-style-type:disc">
+             <li><b>Wilting Capacity</b> - the moisture content where plants can no longer take up any of the water</li>
+             <li><b>Field Capacity</b> - the moisture content of the soil once gravitational water has flown away</li>
+        </ul>
+</div>
+
+<div>
+     <h3 class="w3-center">The Wetting Front</h3>
+     <p>After irrigation water infiltrates in an outward sphere through the surrounding soil, creating a moving boundary between wet and dry soil. This boundary is the wetting front. It moves downwards due to the motion lowering the gravitational potential energy of the water and it moves horizontally due to capillary action by the surrounding dry soil; water always flows to a lower pressure head. So the position of the wetting front depends on:
+     <ul style="list-style-type:disc">
+         <li>Amount of water added</li>
+         <li>Soil Composition (grain size/pore size)</li>
+         <li>Factors removing water (plant roots and evaporation)</li>
+    </ul>
+     <p><b><em>Why do we care about the position of the wetting front?</em></b></p>
+     Ideally, farmers want the wetting front to cover roughly 2/3 of the active root zone, as this ensure that the plants can take up the optimum amount of water needed. If the wetting front is:
+     <ul style="list-style-type:disc">
+         <li><b>Too Shallow</b> - the roots won't be properly covered so the crops won't receive enough water</li>
+         <li><b>Too Deep</b> - when the wetting front goes beyond the active root zone water is being wasted and the water is likely to wash away the key soil nutrients, which reduces the crop yield</li>
+    </ul>
+     <p>So by allowing farmers to locate the depth of the wetting front they are able to irrigate appropriately, which enables optimum water usage and maximises crop yield.</p>
+</div>
+
+<div>
+    <h3 class="w3-center">Ideal Wetting Front Depth</h3>
+    <p>The ideal depth depends on the root distribution of each individual crop. Roots aren't distributed uniformly downwards; the majority of the root mass is accumulated much higher than the maximum root depth. This means that to cover 2/3 of the active root zone the wetting front doesn't need to go down anywhere near the maximum root depth. The most common cash crops grown in Ethiopia and their ideal wetting front have been found:
+    </p>
+
+    <table class="w3-table-all w3-hoverable">
+        <tr class="w3-hover-blue">
+            <th>Crop</th>
+            <th>Depth of 50% Root Mass /cm</th>
+            <th>Depth of 95% Root Mass /cm</th>
+            <th>Ideal Wetting Front Depth /cm</th>
+        </tr>
+        <tr class="w3-hover-blue">
+            <td>Wheat</td>
+            <td>16.8</td>
+            <td>103.8</td>
+            <td>25</td>
+
+        </tr>
+        <tr class="w3-hover-blue">
+            <td>Barley</td>
+            <td>11.5</td>
+            <td>99.6</td>
+            <td>22</td>
+
+        </tr>
+        <tr class="w3-hover-blue">
+            <td>Chickpea</td>
+            <td>17.4</td>
+            <td>84.8</td>
+            <td>30</td>
+
+        </tr>
+        <tr class="w3-hover-blue">
+            <td>Pulse Crops</td>
+            <td>15.3</td>
+            <td>83.6</td>
+            <td>28</td>
+
+        </tr>
+        <tr class="w3-hover-blue">
+            <td>Lentils</td>
+            <td>11.2</td>
+            <td>73.7</td>
+            <td>20</td>
+
+        </tr>
+        <tr class="w3-hover-blue">
+            <td>Peas</td>
+            <td>18.2</td>
+            <td>85.0</td>
+            <td>29</td>
+
+        </tr>
+        <tr class="w3-hover-blue">
+            <td>Oilseed Crops</td>
+            <td>9.4</td>
+            <td>106.3</td>
+            <td>20</td>
+
+        </tr>
+    </table>
+
+</div>
+</div>
 
     <!-- Modal for full size images on click-->
     <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
