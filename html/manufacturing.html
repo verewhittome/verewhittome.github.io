@@ -144,7 +144,7 @@
     <!-- Container (About Section) -->
     <div class="w3-container w3-padding-64 " id="about" style="margin-left:20%; margin-right:15%;">
       <h3 class="w3-center">MANUFACTURING GUIDE</h3>
-      <p>Welcome to the manufacturing guide! This page contains all the neccesery steps to build your very own electrical wetting front detector! Building the detector has three main steps:</p>
+      <p>Welcome to the manufacturing guide! This page contains all the neccesery steps to build your very own <strong>wetting front detector!</strong> Building the <strong>wetting front detector</strong> has three main steps:</p>
       <ul style="list-style-type:circle">
         <li class="w3-padding-small">Understanding the how the circuitry works and programming the Blue Pill microcontroller.</li>
         <li class="w3-padding-small">Constructing the reader module</li>
@@ -166,12 +166,12 @@
 
 <div class="w3-container w3-padding-64 " id="about" style="margin-left:20%; margin-right:15%;">
   <h2 class="w3-center">OVERVIEW</h2>
-  <p>As saturated soil has a drastically different resistance when compared to dry soil, the resistivity can be used as a method of measuring the wetting front. The basic principle of how the electrical wetting front detector works is by measuring the voltage (proportional to resistivity) between two metal strips (sensor) in the soil and lighting up an LED if the resistivity drops below a threshold value (determined during calibration). The circuitry for the electrical wetting front detector can be divided into two main sections.</p>
+  <p>As saturated soil has a drastically different resistance when compared to dry soil, the resistivity can be used as a method of measuring the wetting front. The basic principle of how the <strong>electrical wetting front detector</strong> works is by measuring the voltage (proportional to resistivity) between two metal strips (sensor) in the soil and lighting up an LED if the resistivity drops below a threshold value (determined during calibration). The circuitry for the electrical wetting front detector can be divided into two main sections.</p>
   <ul style="list-style-type:circle">
     <li class="w3-padding-small">The sensor circuitry to give a reading of soil resistivity.</li>
     <li class="w3-padding-small">The microcontroller (STM32F103C8 Blue Pill) used to calibrate, read and light up the LEDs to signal the wetting front.</li>
   </ul>
-  <p>All circuitry and electrical components for the electrical wetting front detector are soldered onto the custom PCB. Relevant files needed to fabricate this PCB can be found at the end of this section.</p>
+  <p>All circuitry and electrical components for the <strong>wetting front detector</strong> are soldered onto the custom PCB. Relevant files needed to fabricate this PCB can be found at the end of this section.</p>
 
   <h2 class="w3-center">SENSOR CIRCUITRY</h2>
   <p>The circuit shown on the left is a simple circuit used to measure the voltage (and hence the resistance) between V1 and GND (representing the two metal strips). The way the circuit operates is as follows:</p>
@@ -179,7 +179,7 @@
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
       <br>
-      <img src="../Images/electrical_manufacturing_12.png" alt="Photo of Me" height="450px">
+      <img src="../Images/electrical_manufacturing_12.PNG" alt="Photo of Me" height="450px">
     </div>
 
     <!-- Hide this text on small devices -->
@@ -196,7 +196,7 @@
 
   <h2 class="w3-center">PROGRAMMING THE MICROCONTROLLER</h2>
   <p>The microcontroller used is a STM32F103C8 "Blue Pill". When compared with an Arduino UNO, the Blue Pill has higher performance, lower power consumption and lower cost. There are multiple ways of programming the microcontroller such as using a JTAG adapter, an mbed platform (eg: nucleo board) or a USB to ttl serial adapter. The pinout  capabilities of the Blue Pill is shown below</p>
-  <img src="../Images/electrical_manufacturing_13.png" height="450px">
+  <img src="../Images/electrical_manufacturing_13.PNG" height="450px">
   <p>source: http://wiki.stm32duino.com/index.php?title=Blue_Pill</p>
   <p>In this guide, we shall take the USB to ttl serial adapter approach. We will be using a FT232RL board as the serial to ttl adapter as a low cost option (available for less than £1). The arduino integrated development environment (IDE) will be used in conjunction with the FT232RL board to program the Blue Pill.</p>
   <p>The steps below outline the process of programming the Blue Pill</p>
@@ -204,13 +204,13 @@
   <ul style="list-style-type:circle">
     <li class="w3-padding-small">First download the Arduino IDE <a href=" https://www.arduino.cc/en/Main/Software">here</a></li>
     <li class="w3-padding-small">Once opened, you will need to add the STM32F103C8 board using the boards manager. Go to Tools > Board > Boards Manager and search for "STM32F103". The expected window is shown below. Click install.</li>
-    <img src="../Images/electrical_manufacturing_14.png" height="400px">
+    <img src="../Images/electrical_manufacturing_14.PNG" height="400px">
     <li class="w3-padding-small">Under tools. change the board to "Generic STM32F103C series" and make sure the other settings are as follows:</li>
-    <img src="../Images/electrical_manufacturing_15.png" height="250px">
+    <img src="../Images/electrical_manufacturing_15.PNG" height="250px">
     <li class="w3-padding-small">Connect the Blue Pill to the FT232RL board which connects to the computer's USB as shown below, a breadboard is recommended for this. The Tx and RX wires are the serial links and the 5V and GND wires provide power to the Blue Pill. It is also possible to use the 3.3V Vcc by changing the voltage jumper FT232RL board. Make sure that the BOOT 0 jumper is connected to 1 and the BOOT 1 jumper is connected to 0.</li>
-    <img src="../Images/electrical_manufacturing_16.png" height="250px">
+    <img src="../Images/electrical_manufacturing_16.PNG" height="250px">
     <li class="w3-padding-small">Under Tools > PORT, select the communication port (COM) that corresponds with the USB connection that the Blue pill is connected to.</li>
-    <li class="w3-padding-small">Insert the code used for the electrical wetting front detector (attached at the end of this section) on the IDE text editor. Compile and upload the code onto the Blue Pill.</li>
+    <li class="w3-padding-small">Insert the code used for the <strong>electrical wetting front detector</strong> (attached at the end of this section) on the IDE text editor. Compile and upload the code onto the Blue Pill.</li>
   </ul>
 
   <div  style="margin-left:37%">
@@ -235,19 +235,19 @@
 <div class="w3-container w3-padding-64 " id="about" style="margin-left:20%; margin-right:15%;">
     <div class=" w3-center">
         <div class="w3-col m3">
-          <img src="../Images/electrical_manufacturing_23.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+          <img src="../Images/electrical_manufacturing_16.JPEG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
         </div>
 
         <div class="w3-col m3">
-          <img src="../Images/electrical_manufacturing_17.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" >
+          <img src="../Images/electrical_manufacturing_17.JPEG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" >
         </div>
 
         <div class="w3-col m3">
-          <img src="../Images/electrical_manufacturing_21.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" >
+          <img src="../Images/electrical_manufacturing_21.JPEG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" >
         </div>
 
         <div class="w3-col m3">
-          <img src="../Images/electrical_manufacturing_22.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+          <img src="../Images/electrical_manufacturing_22.JPEG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
         </div>
     </div>
 
@@ -348,7 +348,7 @@
     <ul style="list-style-type:circle">
     <li class="w3-padding-small">3D print the box and lid of the reader module. Screw on the nuts and bolts to the 3D with the spring in between the bolt and box. This creates a spring loaded contact point that ensure a stable electrical connection when in use.</li>
     <li class="w3-padding-small">Attach the wires to the bolts using a second nut. This forms the interface to the sensor module. Although the matching of wire to screw configuration is not critical, it is recommended that the middle screw is used for ground.</li>
-    <img src="../Images/electrical_manufacturing_11.png" height="300px">
+    <img src="../Images/electrical_manufacturing_11.PNG" height="300px">
     <li class="w3-padding-small">Solder the components onto the PCB using the diagrams below. <strong>Ensure that the Blue Pill microcontroller has been programmed before soldering</strong>. If you are unsure if the microcontroller has been prorgammed correctly, you may want to solder sil sockets onto the PCB first. Note that the LEDs, button and switch are on the top side of the PCB and the remaining components are on the bottom side.</li>
     <img src="../Images/electrical_manufacturing_8.png" height="350px">
     <img src="../Images/electrical_manufacturing_7.png" height="350px">
@@ -356,8 +356,8 @@
     <li class="w3-padding-small">Test the circuit to ensure the soldering is correct and and the circuit is working. This can be done by creating a conductive path between and bolt and the "ground" bolt and observing that a LED turns on.</li>
     <li class="w3-padding-small">Place the PCB in the box aligning the mounting holes. Put the lid on and screw the box shut</li>
     <li class="w3-padding-small">The final product should look like this:</li>
-    <img src="../Images/electrical_manufacturing_18.jpeg" height="250px">
-    <img src="../Images/electrical_manufacturing_19.jpeg" height="2 50px">
+    <img src="../Images/electrical_manufacturing_18.JPEG" height="250px">
+    <img src="../Images/electrical_manufacturing_19.JPEG" height="2 50px">
     </ul>
 
     <h2 class="w3-center">DESIGN FILES</h2>
@@ -438,20 +438,20 @@
 
         <ul style="list-style-type:circle">
           <li class="w3-padding-small">Measure and cut the metal strips according to the dimensions specified and drill holes at the marker points shown below. Note that a small area is left at one end to allow for the wire to be crimped.</li>
-          <img src="../Images/electrical_manufacturing_2.png" height="150px">
+          <img src="../Images/electrical_manufacturing_2.PNG" height="150px">
           <li class="w3-padding-small">Strip and crimp one end of the wire to the metal strip.</li>
           <li class="w3-padding-small">Wrap the metal around the PVC tube at spacings as shown below.</li>
-          <img src="../Images/electrical_manufacturing_3.png" height="200px">
-          <img src="../Images/electrical_manufacturing_4.png" height="200px">
-          <img src="../Images/electrical_manufacturing_5.png" height="200px">
+          <img src="../Images/electrical_manufacturing_3.PNG" height="200px">
+          <img src="../Images/electrical_manufacturing_4.PNG" height="200px">
+          <img src="../Images/electrical_manufacturing_5.PNG" height="200px">
           <li class="w3-padding-small">Attach the metal strips to the PVC tube using rivets. Don't forget to drill an extra hole for each strip just above the crimped wire to route the wire into the tube! The result should look like this:</li>
           <li class="w3-padding-small">3D print the cap for the sensor module (relevant file at the end of this section). If a 3D printer is not avaliable, the top cap can be milled using a lathe and hand drill.</li>
-          <img src="../Images/electrical_manufacturing_9.jpg" height="200px">
+          <img src="../Images/electrical_manufacturing_9.JPG" height="200px">
           <li class="w3-padding-small">Screw on the nuts and bolts to the cap and attach the wires to the bolts using a second nut. This forms the interface to the reader module. Although the matching of wire to screw configuration is not critical, it is recommended that the middle screw is used for ground.</li>
           <li class="w3-padding-small">Test that the metal strips are electrically conductive all the way to the screws on the cap using a multimeter.</li>
           <li class="w3-padding-small">Optional but recommended: fill the inside of the cap with hot glue or silicon to create a waterproof seal and secure the electrical connection.</li>
           <li class="w3-padding-small">Finally, secure the cap to the PVC tube using hot glue or silicon. the final product should look like this:</li>
-          <img src="../Images/prototybetopview.jpg" height="300px" style="margin-left:36%;">
+          <img src="../Images/prototybetopview.JPG" height="300px" style="margin-left:36%;">
         </ul>
 
         <h2 class="w3-center">DESIGN FILES</h2>
