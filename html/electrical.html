@@ -71,10 +71,17 @@
           <i class="fa fa-home w3-large"></i>
           <p style="font-size:15px">HOME</p>
         </a>
-        <a href="background.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-          <i class="fa fa-tint w3-large"></i>
-          <p style="font-size:15px">BACKGROUND</p>
-    </a>
+        <button class="dropdown-btn w3-bar-item w3-button w3-hover-black w3-padding-large">
+          <i class="fa fa-bolt w3-large"></i> <br/>
+           BACKGROUND
+          <i class="fa fa-caret-down"></i>
+          </button>
+            <div class="dropdown-container">
+              <a href="background.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Problem Statment</a>
+              <a href="background_unicef.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Unicef Principles of Digital Design</a>
+
+
+            </div>
           <button class="dropdown-btn w3-bar-item w3-button w3-black w3-padding-large">
             <i class="fa fa-bolt w3-large"></i> <br/>
              ELECTRICAL MOISTURE
@@ -82,9 +89,10 @@
             </button>
               <div class="dropdown-container">
                 <a href="electrical.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Product Overview</a>
-                <a href="tech_specs" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Technical Specifications</a>
                 <a href="manufacturing.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Manufacturing</a>
                 <a href="how_to_use.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">How to Use</a>
+                <a href="deployment_strategy.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Deployment Strategy</a>
+                <a href="test_methodology.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Testing</a>
                 <a href="electricalteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The Electrical Team</a>
 
               </div>
@@ -134,23 +142,23 @@
       <p>
         Wet soil conducts electricity considerably better  than dry soil.
         Through measurements of soil resistivity, the electrical wetting front detector therefore allows farmers to accurately and cheaply determine when their crops have been fully irrigated.
-        This <em> massively</em> reduces wastage of vital water resources and also increases crop yeilds.
+        This <em> massively</em> reduces wastage of vital water resources.
   </p>
   <p class="w3-center" style="font-weight:bold;">The detector is split into two modules</p>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
       <p><b><i class="fa fa-bolt w3-margin-right"></i>The Sensor</b></p><br>
   <img src="/Images/electprotoarty_crop.jpg" style="width:100%; height:20%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Sensor Module">      <p>The sensor rod contains the electrical probes necessary to distinguish dry soil from wet. The sensor consists of a PVC tube (durable, cheap and easy to source)
-        as well as four pairs of conductive, metal, flat rings at each testing depth. <br>
-        By sending a test voltage through each of the four sets of probes, and comparing the corrseponding outputs it is possible
+        as well as 4 pairs of conductive, metal, flat rings. <br>
+        By sending a test voltage through each of the 4 sets of probes, and comparing the corrseponding outputs it is possible
         to clearly determine the height of the wetting front to a high degree of accuracy.
       </p>
     </div>
     <div class="w3-col m6 l w3-padding-large">
       <p><b><i class="fa fa-bolt w3-margin-right"></i>The Reader</b></p><br>
-  <img src="/Images/reader.jpeg" style="margin-bottom:10.5%;margin-top:12.5%;width:100%; height:20%; transform: rotate(0.75turn);" onclick="onClick(this)" class="w3-hover-opacity" alt="Reader Device">
+  <img src="/Images/reader.jpeg" style="margin-bottom:10.5%;margin-top:12.5%;width:100%; height:20%; transform: rotate(0.25turn);" onclick="onClick(this)" class="w3-hover-opacity" alt="Reader Device">
 
-      <p >Using just a small microprocessor and four LEDs, the reader simply and effectively communicates to the end user how deep in the soil the wetting front has reached.
+      <p >Using just a small microprocessor and 4 LEDs, the reader simply and effectively communicates to the end user how deep in the soil the wetting front has reached.
         The reader interfaces with the sensor rod with a 'tap on/ tap off' design, rendering the product easy to use and extremely robust.
 
 
@@ -162,7 +170,7 @@
     <img src="/Images/diagram.jpg" style="width:50%;height:60%"alt="Sketch">
 
 <p class="w3-content w3-center"> By keeping the design modular, the farmer is able to keep multiple sensors installed at various locations in his fields.
-It is then only necessary to have one reader which can be quickly moved across the field, taking readings at each of the sensor positions.</br>
+It is then only necessary to have 1 reader which can be quickly moved across the field, taking readings at each of the sensor positions.</br>
 The modular design also protects the vulnerable electrical components in the reader device from exposure to the elements and can be stored safely within households.
 </p>
 </div>
@@ -175,6 +183,7 @@ The modular design also protects the vulnerable electrical components in the rea
     <span class="w3-xxlarge w3-text-white w3-wide">UNICEF Principles of Digital Design </span>
   </div>
 </div>
+<p class="w3-text-grey  w3-right" style="margin-right:5%">Image source: www.pexels.com</p>
 
 <div class="w3-container w3-padding-64" id="about" style="margin-left:20%; margin-right:15%;">
 
@@ -241,11 +250,12 @@ The modular design also protects the vulnerable electrical components in the rea
 
 </div>
 <!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
+<div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
     <span class="w3-xxlarge w3-text-white w3-wide">RATING AGAINST KEY SPECIFICATIONS</span>
   </div>
 </div>
+<p class="w3-text-grey  w3-right" style="margin-right:5%">Image source: www.pexels.com</p>
 
 <div class="w3-container w3-padding-64" id="about" style="margin-left:20%; margin-right:15%;">
 
@@ -387,17 +397,6 @@ The modular design also protects the vulnerable electrical components in the rea
         <div class="w3-center" style="margin-left:50%;height:20px;width:15%;margin-bottom: 5px;background-color:Violet;color: white;">+1</div>
         -->
     </div>
-
-    <p class="w3-xlarge w3-center">Overall Score</p>
-
-    <div class="w3-white">
-      <div class="w3-dark-grey w3-center" style="margin-left:45%;height:20px;width:10%; margin-bottom: 5px; color: grey;">Datum </div>
-      <div class="w3-center" style="margin-left:50%;height:20px;width:13%;margin-bottom: 5px; background-color:DodgerBlue; color: white;">+0.9</div>
-      <!-- <div class="w3-center" style="margin-left:50%;height:20px;width:15%;margin-bottom: 5px; background-color:SlateBlue;color: white;">+1</div>
-      <div class="w3-center" style="margin-left:45%;height:20px;width:10%;margin-bottom: 5px;background-color:MediumSeaGreen;color: white">Datum</div>
-      <div class="w3-center" style="margin-left:50%;height:20px;width:15%;margin-bottom: 5px;background-color:Violet;color: white;">+1</div>
-      -->
-  </div>
 
 
 </div>

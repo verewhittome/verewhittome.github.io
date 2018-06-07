@@ -70,17 +70,24 @@
     <body>
 
       <!-- Icon Bar (Sidebar - hidden on small screens) -->
-      <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="color: black">
+      <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="color: black; width: 15%; height:100%;">
         <!-- Avatar image in top left corner -->
         <img src="https://www.emma.cam.ac.uk/images/supporting/kabla1.jpg" style="width:100%">
         <a href="farm.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
           <i class="fa fa-home w3-large"></i>
           <p style="font-size:15px">HOME</p>
         </a>
-        <a href="background.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-          <i class="fa fa-tint w3-large"></i>
-          <p style="font-size:15px">BACKGROUND</p>
-    </a>
+        <button class="dropdown-btn w3-bar-item w3-button w3-hover-black w3-padding-large">
+          <i class="fa fa-bolt w3-large"></i> <br/>
+           BACKGROUND
+          <i class="fa fa-caret-down"></i>
+          </button>
+            <div class="dropdown-container">
+              <a href="background.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Problem Statment</a>
+              <a href="background_unicef.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Unicef Principles of Digital Design</a>
+
+
+            </div>
           <button class="dropdown-btn w3-bar-item w3-button w3-black w3-padding-large">
             <i class="fa fa-bolt w3-large"></i> <br/>
              ELECTRICAL MOISTURE
@@ -88,9 +95,11 @@
             </button>
               <div class="dropdown-container">
                 <a href="electrical.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Product Overview</a>
-                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Specifications</a>
+                <a href="manufacturing.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Manufacturing</a>
                 <a href="how_to_use.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">How to Use</a>
-                <a href="electricalteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The electrical team</a>
+                <a href="deployment_strategy.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Deployment Strategy</a>
+                <a href="test_methodology.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Testing</a>
+                <a href="electricalteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The Electrical Team</a>
 
               </div>
 
@@ -104,14 +113,14 @@
               <a href="mech_touchy_bottle.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Touchy Bottle</a>
               <a href="mech_core_sampler.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Soil Core Sampler</a>
               <a href="mech_wetting.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Bouyant wetting front detector</a>
-              <a href="mechteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The mechanical team</a>
+              <a href="mechteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The Mechanical team</a>
 
             </div>
         </a>
 
-        <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-          <i class="fa fa-envelope w3-large"></i>
-          <p style="font-size:15px">CONTACT</p>
+        <a href="comparison.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+          <i class="fa fa-balance-scale w3-large"></i>
+          <p style="font-size:15px">COMPARISON</p>
         </a>
 
       </nav>

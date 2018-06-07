@@ -94,10 +94,17 @@
         <i class="fa fa-home w3-large"></i>
         <p style="font-size:15px">HOME</p>
       </a>
-      <a href="background.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <i class="fa fa-tint w3-large"></i>
-        <p style="font-size:15px">BACKGROUND</p>
-  </a>
+      <button class="dropdown-btn w3-bar-item w3-button w3-hover-black w3-padding-large">
+        <i class="fa fa-bolt w3-large"></i> <br/>
+         BACKGROUND
+        <i class="fa fa-caret-down"></i>
+        </button>
+          <div class="dropdown-container">
+            <a href="background.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Problem Statment</a>
+            <a href="background_unicef.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Unicef Principles of Digital Design</a>
+
+
+          </div>
         <button class="dropdown-btn w3-bar-item w3-button w3-black w3-padding-large">
           <i class="fa fa-bolt w3-large"></i> <br/>
            ELECTRICAL MOISTURE
@@ -105,9 +112,10 @@
           </button>
             <div class="dropdown-container">
               <a href="electrical.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Product Overview</a>
-              <a href="tech_specs" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Technical Specifications</a>
               <a href="manufacturing.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Manufacturing</a>
               <a href="how_to_use.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">How to Use</a>
+              <a href="deployment_strategy.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Deployment Strategy</a>
+              <a href="test_methodology.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">Testing</a>
               <a href="electricalteam.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">The Electrical Team</a>
 
             </div>
@@ -148,7 +156,7 @@
     <!-- Container (About Section) -->
     <div class="w3-content w3-container w3-padding-64" style="margin-left:20%">
         <!-- <h3 class="w3-center">How to use the electronic wetting front detector</h3> -->
-        <p>Welcome to the Deployment strategy page! This page contains some useful information for NGOs and other third-parties who are 
+        <p>Welcome to the Deployment strategy page! This page contains some useful information for NGOs and other third-parties who are
           keen to help Ehthiopian farmers fully deploy our product, HACK ROD</p>
         <div style="margin-top:50px"></div>
         <h3 class="w3-center">Supply chain and Manufacturing in Ethiopia</h3>
@@ -156,39 +164,39 @@
             Despite its fast economic growth and vast potential for development, Ethiopian industrial supply chain and manucaturing are still relatively undeveloped.
         </p>
 <p><strong>Electronics industry:</strong> Components and many other supplies for electronics manufacturing are imported,
-   resulting in relatively low domestic value added manufacturing in Ethiopia and a complex supply chain. 
+   resulting in relatively low domestic value added manufacturing in Ethiopia and a complex supply chain.
    The domestic market is currently inadequate for component manufacturing.(Ref.<a href="http://documents.worldbank.org/curated/en/229541499855432360/pdf/117355-WP-P159918-PUBLIC-EthiopiaElectronicsPolicyReportprint.pdf">World Bank report</a>)</p>
 
 <p>As a result, PCBs and all other electrical components must be manufactured and soldered based on our design at relatively low cost
   in another country(possibly China or India), and then imported to Ethiopia. </p>
 
-<p><strong>Plastics industry</strong>: Over 95% of the raw plastic material(e.g. PET granules and preforms) are imported. However there are currently 
+<p><strong>Plastics industry</strong>: Over 95% of the raw plastic material(e.g. PET granules and preforms) are imported. However there are currently
   more than 100 plastic product manufacturers in Ethiopia. Some major companies are, for example, METEC plastic industry, Ethioplastic and Min2 plast.
    PVC tubes and casings could be sourced locally from these companies, but the raw material must be imported.</p>
 
-<p><strong>Metal & machine industry</strong>: State-owned industry complex METEC is capable of supplying basic metal products(e.g. metal sheets, rivets, nuts, bolts) 
+<p><strong>Metal & machine industry</strong>: State-owned industry complex METEC is capable of supplying basic metal products(e.g. metal sheets, rivets, nuts, bolts)
   and machines(e.g. drilling machine, bending machine, soldering devices). Therefore metal components could be sourced and assembled locally. </p>
 
 <p><strong>Manufacturing</strong>(based on current prototype): An unskilled general worker should be able to assemble 10 sensors or 20 readers per day after training.
    If the need increases further, it would be more efficient to set up a assembly line.</p>
 
-<p><strong>Maintenance</strong>: Locally produced batteries(Awash) are available in the Ethiopian market. An engineering service centre might be set up in larger towns 
+<p><strong>Maintenance</strong>: Locally produced batteries(Awash) are available in the Ethiopian market. An engineering service centre might be set up in larger towns
   to serve the farmers nearby.</p>
 
 
 <div style="margin-top:50px"></div>
  <h3 class="w3-center">Costs estimation</h3>
- <p><strong>Tax</strong>: All imported goods to Ethiopia are subjected to customs duties and taxes, unless exempted by law. Taxes applicable on imported goods 
+ <p><strong>Tax</strong>: All imported goods to Ethiopia are subjected to customs duties and taxes, unless exempted by law. Taxes applicable on imported goods
    are: Import (Customs) duty(20% in our case), Withholding Tax (a fixed rate of 3%), Excise Tax (0% in our case), VAT (a fixed rate of 15%) and
     Surtax (a fixed rate of 10%).(Ref.<a href="http://www.erca.gov.et/">Ethiopian Revenues and Customs Authority</a>) Total payable tax is calculated as fellows:</p>
 
-<p>Total Cost of the goods = FOB Cost + Insurance + Freight</p> 
-<p>Total Cost of the goods x Import Customs Duty = A</p> 
-<p>(Total Cost of the goods + A) x Excise Tax Rate (If applicable) = B</p> 
+<p>Total Cost of the goods = FOB Cost + Insurance + Freight</p>
+<p>Total Cost of the goods x Import Customs Duty = A</p>
+<p>(Total Cost of the goods + A) x Excise Tax Rate (If applicable) = B</p>
 <p> (Total Cost of the goods + A + B) x VAT = C</p>
 <p>(Total Cost of the goods + A + B + C) x Surtax = D</p>
 <p> Total Cost of the goods x Withholding Tax = E</p>
-<p> TOTAL PAYABLE at THE TIME OF IMPORT = A+B+C+D+E=0.548xTotal Cost of the goods. 
+<p> TOTAL PAYABLE at THE TIME OF IMPORT = A+B+C+D+E=0.548xTotal Cost of the goods.
     </p>
 <p><strong>BOM</strong>: Due to the lack of information about manufacturing cost in Ethiopia, our BOM(bill of materials) cost estimation is based
    on the assumption that all components are manufactured in China and then imported to Ethiopia for final assembly. The estimated BOM cost is £8.59 per reader, and £2.33 per sensor. Once some of the components become locally sourced, the cost should be lower.</p>
@@ -202,19 +210,19 @@
   <p><strong>Fixed cost</strong>: Due to the lack of information about Ethiopia(e.g. set-up cost, utility cost,etc.), fixed cost remains unknown, but it should be negligible compared to variable costs.</p>
 <div style="margin-top:50px"></div>
 <h3 class="w3-center">Benefits and Business model</h3>
-<p>Generally speaking, HACK ROD can help farmers to irrigate more precisely, therefore help them reduce the cost of irrigation, 
+<p>Generally speaking, HACK ROD can help farmers to irrigate more precisely, therefore help them reduce the cost of irrigation,
   save water, labor and energy, and prevent nutrients in the soil from being washed-off by over-irrigation. However, the costs for irrigation
-   are always strongly site specific: they vary with the nature of the crops, source of water, and topographical, pedological, and geological conditions, 
+   are always strongly site specific: they vary with the nature of the crops, source of water, and topographical, pedological, and geological conditions,
    etc. There is no easy way to predict how much of the cost can be reduced before the farmer actually using HACK ROD to irrigate precisely. In addition,
     although the effectiveness of successfully preserving nutrients in the soil might be reflected by increase in yield in the long term, it is still very hard to
-     demonstrate and quantify. 
+     demonstrate and quantify.
   </p>
 
-<p>For large-scale farms, production-sales model would be useful as the large-scale farms in Ethiopia are keen to improve their irrigation systems to be smarter and more precise. 
+<p>For large-scale farms, production-sales model would be useful as the large-scale farms in Ethiopia are keen to improve their irrigation systems to be smarter and more precise.
     They are aware of the potential benefits of using electrical wetting front detectors, and would be willing to at least have a trial.</p>
 
-<p>In order to make the small-scale individual farmers aware of these variable and intangible benefits, a <strong>subscription business model</strong> is highly recommended: 
-  </p> 
+<p>In order to make the small-scale individual farmers aware of these variable and intangible benefits, a <strong>subscription business model</strong> is highly recommended:
+  </p>
   <p>1.Farmers pay a deposit to get one reader, some sensors, and guidance on how to use.  </p>
 <p>2.Farmers can then use HACK ROD in their fields for one year.
   </p>
@@ -225,6 +233,6 @@
 <h3 class="w3-center">Limitations</h3>
 <p>1.Most suppliers in Ethiopia do not have a English website. Even If some do, the websites are quite basic and not very informative. Therefore, due to the lack of available information,
     the cost estimation might not be close to the real case. </p>
-<p>2.Our team don't have the resources to test HACK ROD in real Ethiopian fields, thus the analysis in 'Benefits and Business model' section are theoretical 
-    and for reference only, and the benefits mentioned above are not guaranteed. 
+<p>2.Our team don't have the resources to test HACK ROD in real Ethiopian fields, thus the analysis in 'Benefits and Business model' section are theoretical
+    and for reference only, and the benefits mentioned above are not guaranteed.
 </p>
