@@ -83,12 +83,37 @@
   .w3-wide {letter-spacing: 10px;}
   .w3-hover-opacity {cursor: pointer;}
 
+  .heading {
+
+    font-size: 80px;
+  }
+.responsive{
+  height:250px;
+}
+
   /* Turn off parallax scrolling for tablets and phones */
-  @media only screen and (max-device-width: 1024px) {
+  /* @media only screen and (max-device-width: 1024px) {
       .bgimg-1, .bgimg-2, .bgimg-3 {
           background-attachment: scroll;
       }
-  }
+    } */
+    @media only screen and (max-device-width: 500px) {
+        .heading   {
+          font-size: 30px;
+
+        }
+        .responsive{
+          height: 100px
+        }
+        .bgimg1{
+          min-height:200px;
+          height:200px;
+          width:100%
+
+        }
+      }
+
+
   </style>
 </head>
   <body>
@@ -121,14 +146,15 @@
   <!-- First Parallax Image with Logo Text -->
 
   <div class="bgimg-1 w3-display-container" id="home">
-    <div class="w3-display-middle" style="white-space:nowrap;">
+    <div class="w3-display-middle" >
+      <!-- style="white-space:nowrap;" -->
       <!-- <span class="w3-xxxlarge w3-text-white w3-wide" style="font-family: Monoton;">CUES Venture Competition Summer 2018</span> -->
       <!-- <span class="w3-center w3-padding-large w3-black w3-xxxlarge w3-wide w3-animate-opacity" style="font-family: Raleway;"> <span style="font-family: Monoton; font-size: 60px;">CUES</span> Venture Competition Summer 2018</span> -->
   <!-- <span class="w3-xxxlarge w3-text-white w3-wide" style="font-family: Raleway;"> <span style="font-family: Monoton; font-size: 60px;">CUES</span> Venture Competition Summer 2018</span> -->
 <div class="w3-container">
-<img src="images0/logo_white.png" style="height:250px; margin-bottom:2%" class="w3-padding-large">
+<img src="images0/logo_white.png" style=" margin-bottom:2%" class="w3-padding-large responsive w3-center" >
     <!-- <p class="w3-center w3-padding-normal w3-wide w3-animate-opacity" style="font-family: Monoton; font-size: 200px;color:#D3D3D3;">CUES </p> -->
-    <p class="w3-padding-large" style="font-family: Lobster;color:#D3D3D3;font-size:90px">Venture Programme</p>
+    <p class="w3-padding-large w3-center heading" style="font-family: Lobster;color:#D3D3D3;" >Venture Programme</p>
 </div>
     </div>
   </div>
@@ -176,7 +202,7 @@
 </ul>
 
 <div class="w3-center" style="margin-top:10%;">
-<button class="button button2" style="width:30%; font-size:30px">Apply Now</button>
+<button class="button button2 w3-padding-small w3-center" style="width:30%; font-size:120%">Apply Now</button>
 </div>
 
 
