@@ -24,6 +24,8 @@
     <link rel="stylesheet" type="text/css" href="timeline.css">
     <link rel="stylesheet" type="text/css" href="timeline1.css">
     <link rel="shortcut icon" href="images0/iconlogo.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -97,10 +99,11 @@
       <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
         <i class="fa fa-bars"></i>
       </a>
-      <a href="#home" class="w3-bar-item w3-button">HOME</a>
-      <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-bulb"></i> ABOUT</a>
-      <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> CATEGORIES</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> JUDGES</a>
+      <a href="#home" class="w3-bar-item w3-button"><i class="fas fa-home"></i> HOME</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-lightbulb"></i> ABOUT</a>
+      <a href="#format" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-clock"></i> FORMAT</a>
+      <a href="#categories" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> CATEGORIES</a>
+      <a href="#judges" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> JUDGES</a>
       <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
         <i class="fa fa-search"></i>
       </a>
@@ -121,11 +124,12 @@
     <div class="w3-display-middle" style="white-space:nowrap;">
       <!-- <span class="w3-xxxlarge w3-text-white w3-wide" style="font-family: Monoton;">CUES Venture Competition Summer 2018</span> -->
       <!-- <span class="w3-center w3-padding-large w3-black w3-xxxlarge w3-wide w3-animate-opacity" style="font-family: Raleway;"> <span style="font-family: Monoton; font-size: 60px;">CUES</span> Venture Competition Summer 2018</span> -->
-    <!-- <span class="w3-xxxlarge w3-text-white w3-wide" style="font-family: Raleway;"> <span style="font-family: Monoton; font-size: 60px;">CUES</span> Venture Competition Summer 2018</span> -->
+  <!-- <span class="w3-xxxlarge w3-text-white w3-wide" style="font-family: Raleway;"> <span style="font-family: Monoton; font-size: 60px;">CUES</span> Venture Competition Summer 2018</span> -->
+<div class="w3-container">
 <img src="images0/logo_white.png" style="height:250px; margin-bottom:2%" class="w3-padding-large">
     <!-- <p class="w3-center w3-padding-normal w3-wide w3-animate-opacity" style="font-family: Monoton; font-size: 200px;color:#D3D3D3;">CUES </p> -->
     <p class="w3-padding-large" style="font-family: Lobster;color:#D3D3D3;font-size:90px">Venture Programme</p>
-
+</div>
     </div>
   </div>
 
@@ -175,33 +179,16 @@
 <button class="button button2" style="width:30%; font-size:30px">Apply Now</button>
 </div>
 
-  <div class="w3-row w3-center w3-dark-grey w3-padding-16" style="margin-top:100px;margin-bottom:100px;">
-    <div class="w3-quarter w3-section">
-      <span class="w3-xlarge">12</span><br>
-    Expert Judges
-    </div>
-    <div class="w3-quarter w3-section">
-      <span class="w3-xlarge">4</span><br>
-      Competition categories
-    </div>
-    <div class="w3-quarter w3-section">
-      <span class="w3-xlarge">£to be revealed</span><br>
-      Prize Fund
-    </div>
-    <div class="w3-quarter w3-section">
-      <span class="w3-xlarge">2</span><br>
-      Months
-    </div>
-  </div>
+
   </div>
   <!-- Second Parallax Image with Portfolio Text -->
-  <div class="bgimg-2 w3-display-container">
+  <div class="bgimg-2 w3-display-container"  id="format">
     <div class="w3-display-middle">
       <span class="w3-xxxlarge w3-text-white w3-wide" style="font-family: Raleway;">Format</span>
     </div>
   </div>
 
-  <div class="w3-content w3-container w3-padding-64" id="about">
+  <div class="w3-content w3-container w3-padding-64">
     <h3 class="w3-center">FORMAT</h3>
     <p class="w3-center"><em></em></p>
 
@@ -308,33 +295,7 @@
     </div>
 
 
-  <p class="w3-center"><em>Judge Panel<br><br> Click on the images to make them bigger</em></p><br>
 
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="/images0/profile.jpg" style="width:100%; height:250px; border-radius:25%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Vere">
-    <p>Judge 1</p>
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/images0/profile.jpg" style="width:100%; height:250px; border-radius:25%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Simon">
-      <p>Judge 2</p>
-
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/images0/profile.jpg" style="width:100%; height:250px; border-radius:25%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Quan">
-      <p>Judge 3</p>
-
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/images0/profile.jpg" style="width:100%; height:250px; border-radius:25%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Edward">
-      <p>Judge 4</p>
-
-    </div>
-  </div>
   </div>
 
   <!-- Container (Portfolio Section) -->
@@ -359,33 +320,7 @@
     </div>
 
 
-  <p class="w3-center"><em>Judge Panel<br><br> Click on the images to make them bigger</em></p><br>
 
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="/images0/profile.jpg" style="width:100%; height:250px; border-radius:25%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Vere">
-    <p>Judge 1</p>
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/images0/profile.jpg" style="width:100%; height:250px; border-radius:25%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Simon">
-      <p>Judge 2</p>
-
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/images0/profile.jpg" style="width:100%; height:250px; border-radius:25%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Quan">
-      <p>Judge 3</p>
-
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/images0/profile.jpg" style="width:100%; height:250px; border-radius:25%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Edward">
-      <p>Judge 4</p>
-
-    </div>
-  </div>
 </div>
 
 
@@ -404,33 +339,7 @@
       </p>
     </div>
 
-  <p class="w3-center"><em>Judge Panel<br><br> Click on the images to make them bigger</em></p><br>
 
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="/images0/profile.jpg" style="width:100%; height:250px; border-radius:25%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Vere">
-    <p>Judge 1</p>
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/images0/profile.jpg" style="width:100%; height:250px; border-radius:25%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Simon">
-      <p>Judge 2</p>
-
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/images0/profile.jpg" style="width:100%; height:250px; border-radius:25%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Quan">
-      <p>Judge 3</p>
-
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/images0/profile.jpg" style="width:100%; height:250px; border-radius:25%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Edward">
-      <p>Judge 4</p>
-
-    </div>
-  </div>
 </div>
 
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
@@ -452,37 +361,18 @@
     </p>
   </div>
 
-<p class="w3-center"><em>Judge Panel<br><br> Click on the images to make them bigger</em></p><br>
 
-<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-<div class="w3-row-padding w3-center">
-  <div class="w3-col m3">
-    <img src="/images0/profile.jpg" style="width:100%; height:250px; border-radius:25%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Vere">
-  <p>Judge 1</p>
-  </div>
-
-  <div class="w3-col m3">
-    <img src="/images0/profile.jpg" style="width:100%; height:250px; border-radius:25%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Simon">
-    <p>Judge 2</p>
-
-  </div>
-
-  <div class="w3-col m3">
-    <img src="/images0/profile.jpg" style="width:100%; height:250px; border-radius:25%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Quan">
-    <p>Judge 3</p>
-
-  </div>
-
-  <div class="w3-col m3">
-    <img src="/images0/profile.jpg" style="width:100%; height:250px; border-radius:25%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Edward">
-    <p>Judge 4</p>
-
-  </div>
-</div>
 </div>
 
+<div class="bgimg-3 w3-display-container" id="judges">
+  <div class="w3-display-middle" >
+     <span class="w3-xxxlarge w3-text-white w3-wide" style="font-family: Raleway;">Judges</span>
+  </div>
+</div>
 
-
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64">
+</div>
 
   <!-- Container (Contact Section) -->
   <div class="w3-content w3-container w3-padding-64" id="contact">
